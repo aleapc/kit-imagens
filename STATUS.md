@@ -4,4 +4,4 @@ Atualizado pelo PC a cada `node tools/recolhe.mjs`.
 
 | curso | pedido | entregues | estado |
 |---|---:|---:|---|
-| curso-espanha | 21 | 3 | em produção · +3 copiadas |
+| curso-espanha | 21 | 13 | em produção · +5 copiadas |
