@@ -22,7 +22,7 @@ const pedidosDir = join(bridge, 'pedidos');
 
 // A fila de encadeamento: quando um curso fecha, o próximo é despachado.
 // Ordem de mercado do catálogo. FR e IT entram quando existirem no disco.
-const FILA = ['curso-espanha', 'curso-espanha-de', 'curso-fr', 'curso-it'];
+const FILA = ['curso-espanha', 'curso-espanha-de', 'curso-espanha-fr', 'curso-espanha-it'];
 
 const linhas = [];
 let despachou = null;
