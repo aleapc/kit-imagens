@@ -20,9 +20,13 @@ import { execSync } from 'node:child_process';
 const bridge = join(dirname(fileURLToPath(import.meta.url)), '..');
 const pedidosDir = join(bridge, 'pedidos');
 
-// A fila de encadeamento: quando um curso fecha, o próximo é despachado.
-// Ordem de mercado do catálogo. FR e IT entram quando existirem no disco.
-const FILA = ['curso-espanha', 'curso-espanha-de', 'curso-espanha-fr', 'curso-espanha-it'];
+// A fila de encadeamento é por DESTINO, não por comprador. A imagem é ativo do
+// DESTINO: EN/DE/FR/IT da Espanha compartilham as MESMAS 47 imagens (byte-a-byte
+// — o dono corrigiu isto em 2026-07-28). Uma variante de comprador NÃO gera nada:
+// ela COPIA o set canônico do destino (`cp`, custo zero, sem Mac). Por isso as
+// variantes -de/-fr/-it saíram da fila — só destinos NOVOS geram. Hoje só a
+// Espanha existe; França-destino, Itália-destino etc. entram aqui quando nascerem.
+const FILA = ['curso-espanha'];
 
 const linhas = [];
 let despachou = null;
