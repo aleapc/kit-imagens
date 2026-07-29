@@ -39,6 +39,7 @@ if (!existsSync(courseCode)) {
 const AMBIENTE = {
   'curso-espanha': 'Espanha peninsular (Madri, Barcelona, Sevilha, Valência, San Sebastián): bar de bairro, mercado, metrô, praça.',
   'curso-espanha-de': 'Espanha peninsular (Madri, Barcelona, Sevilha, Valência, San Sebastián): bar de bairro, mercado, metrô, praça.',
+  'curso-espanha-fr': 'Espanha peninsular (Madri, Barcelona, Sevilha, Valência, San Sebastián): bar de bairro, mercado, metrô, praça.',
   'curso-espanol': 'rioplatense (Montevidéu, Colonia, Buenos Aires).',
   'curso-mandarim': 'China urbana (Xangai, Pequim, Chengdu): rua movimentada, mercado, metrô, casa de chá.',
   'curso-tailandes': 'Tailândia (Bangkok, Chiang Mai): mercado noturno, templo, tuk-tuk, barraca de comida de rua.'
@@ -59,7 +60,11 @@ const funcao = new Map(contrato.slots.map((s) => [s.id, s.funcao]));
 const partes = [];
 for (const f of readdirSync(courseCode).filter((x) => /^ep-.*\.json$/.test(x))) {
   const j = JSON.parse(readFileSync(join(courseCode, f), 'utf8'));
-  if (j.slot) partes.push(j);
+  // Só parte ESCRITA entra no pedido: uma parte `aguardaNarracao` ainda tem a
+  // `cena` do scaffold (língua/gag do curso-base) — pedir a imagem dela agora
+  // manda o Mac gerar uma cena que vai ser reescrita. O pedido é idempotente:
+  // quando a parte ganha narração, um novo `pedido.mjs` a inclui.
+  if (j.slot && !j.aguardaNarracao) partes.push(j);
 }
 partes.sort((a, b) => (ordem.get(a.slot) ?? 999) - (ordem.get(b.slot) ?? 999));
 

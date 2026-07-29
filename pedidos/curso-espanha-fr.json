@@ -1,0 +1,44 @@
+{
+  "curso": "curso-espanha-fr",
+  "ambiente": "Espanha peninsular (Madri, Barcelona, Sevilha, Valência, San Sebastián): bar de bairro, mercado, metrô, praça.",
+  "estilo": "Pintura digital cinematográfica, luz de fim de tarde (golden hour), cores quentes e saturadas, atmosfera acolhedora e convidativa, estilo das ilustrações de viagem. Sem nenhum texto, letra, número ou logotipo na imagem. Enquadramento horizontal 3:2 (1200×800), profundidade de campo suave, composição com um ponto focal claro. Pessoas de costas, de perfil ou a média distância — nenhum rosto reconhecível em primeiro plano.",
+  "entregar_em": "entregues/curso-espanha-fr/",
+  "arquivos": [
+    {
+      "id": "b01",
+      "arquivo": "b01.webp",
+      "titulo": "Vous dites un mot, il en sort un autre",
+      "cena": "Deux heures moins dix, un comptoir bondé : vous dites un mot que vous avez bien appris, et le serveur entend un autre — parce que le coup de voix a glissé vers la fin."
+    },
+    {
+      "id": "b10",
+      "arquivo": "b10.webp",
+      "titulo": "«SALIDA» ne veut pas dire «sale»",
+      "cena": "Deux heures et quart, devant une porte fermée : le verrou est mis, le commerce non, et le mot sur la vitre ressemble au français sans le dire."
+    },
+    {
+      "id": "b11",
+      "arquivo": "b11.webp",
+      "titulo": "Une seconde et demie au comptoir",
+      "cena": "Deux heures moins dix, le comptoir plein sur trois rangs, le patron vous regarde, dit «Dime» et vous laisse une seconde et demie avant de passer au suivant."
+    },
+    {
+      "id": "b12",
+      "arquivo": "b12.webp",
+      "titulo": "Sans glace — et un de ceux-là",
+      "cena": "Trente-quatre degrés, une table en terrasse, et dans le grand verre que le serveur vient de poser devant vous, les trois quarts sont de la glace."
+    },
+    {
+      "id": "b13",
+      "arquivo": "b13.webp",
+      "titulo": "Ce qu'il y a dans les haricots verts",
+      "cena": "Neuf heures et demie, une table en terrasse. Vous venez de dire qu'il y a quelque chose que vous ne pouvez pas manger — et le serveur sourit, hoche la tête et dit une phrase qui sonne comme un oui et n'en est pas un."
+    },
+    {
+      "id": "i07",
+      "arquivo": "i07.webp",
+      "titulo": "Deux mots, et le cuisinier sort de sa cuisine",
+      "cena": "Vous avez fini l'assiette, le serveur passe et vous regarde : «¿Qué tal todo?». Vous avez deux mots pour lui dire que c'était bon avant qu'il reparte."
+    }
+  ]
+}
