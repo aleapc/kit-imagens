@@ -47,7 +47,10 @@ if (!Array.isArray(cenas) || cenas.length !== 36) {
 
 mkdirSync(join(bridge, 'pedidos'), { recursive: true });
 const feitos = [];
+let prio = 0;
 for (const [curso, ambiente] of Object.entries(DESTINOS)) {
+  prio++; // prefixo de prioridade: o Mac processa os pedidos em ordem de NOME (o
+          // listener é alfabético), então 1-... vem antes de 5-... = valor do mapa
   mkdirSync(join(bridge, 'entregues', curso), { recursive: true });
   const spec = {
     curso,
@@ -62,14 +65,14 @@ for (const [curso, ambiente] of Object.entries(DESTINOS)) {
       cena: String(c.cena).replace(/\s+/g, ' ').trim(),
     })),
   };
-  writeFileSync(join(bridge, 'pedidos', `${curso}.json`), JSON.stringify(spec, null, 2) + '\n');
+  writeFileSync(join(bridge, 'pedidos', `${prio}-${curso}.json`), JSON.stringify(spec, null, 2) + '\n');
 
   let md = `# Banco de imagens — ${curso}\n\n`;
   md += `**${spec.arquivos.length} imagens.** Ambiente: ${ambiente}\n\n`;
   md += `BANCO ANTECIPADO: cenas universais das 36 situações, instanciadas neste destino. Entregar em \`entregues/${curso}/\`, id exato \`.webp\`, 1200×800, sem texto.\n\n`;
   md += `## Bloco de estilo — cole ANTES de cada prompt\n\n> ${ESTILO} Ambiente: ${ambiente}\n\n## As imagens\n\n`;
   for (const a of spec.arquivos) md += `### ${a.id}.webp\n**${a.titulo}**\n\n${a.cena}\n\n`;
-  writeFileSync(join(bridge, 'pedidos', `${curso}.md`), md);
+  writeFileSync(join(bridge, 'pedidos', `${prio}-${curso}.md`), md);
   feitos.push(`${curso} (${spec.arquivos.length})`);
 }
 console.log('pedidos de banco escritos:\n  ' + feitos.join('\n  '));
