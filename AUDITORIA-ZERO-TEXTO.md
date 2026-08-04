@@ -86,8 +86,40 @@ numérico com dígitos."
 Monumentos e marcos geográficos são o padrão aceito — a `b06` de `destino-franca` mostra
 a Torre Eiffel e está aprovada. Isso foi mantido como critério.
 
-## Pendente de decisão do dono
+## RESOLVIDO — 2026-08-04
 
-Regenerar as 15 confirmadas custa ~1h de operação. As 15 duvidosas precisam de um
-critério humano antes de qualquer ação. Nada foi regenerado nestes dois acervos — eles
-seguem exatamente como estavam.
+O dono revisou o critério (ver `CRITERIO-TEXTO.md`): texto é permitido desde que esteja
+no idioma do destino e correto. Sob o critério novo, `franca b17` (cruz de farmácia) e
+`franca b14` (teclado numérico) deixaram de ser violação. As demais permaneceram, porque
+o que têm é **pseudo-texto inventado pelo gerador**, não texto correto.
+
+**As 13 violações remanescentes foram todas regeneradas e commitadas.**
+
+| curso | ids corrigidos |
+|---|---|
+| destino-alemanha | b04, b10, b17, i02, i03, i10 |
+| destino-franca | a01, b02, b06, i02, i03, i05, i07 |
+
+Cada uma foi conferida visualmente antes de substituir o arquivo, e a verificação de md5
+confirma ausência de duplicatas em ambos os acervos.
+
+### O que funcionou
+
+Nomear o objeto específico no prompt, em vez de repetir a proibição genérica:
+
+- painel de partidas → "faixas luminosas e manchas de cor fora de foco, SEM linha de
+  caracteres discernível"
+- rótulos → "garrafas LISAS, vidro colorido puro, sem papel, sem escrita e sem selo"
+- conta/recibo → "retângulo claro LISO e em branco"
+- lousa de menu → "MUITO desfocada, lida apenas como superfície escura"
+- crachá → "cordão liso no pescoço, SEM crachá pendurado"
+
+Onde a cena original já pedia desfoque ("painel luminoso e desfocado", "lousa de menu
+desfocada"), a correção foi só reforçar o que o pedido já dizia — o gerador é que havia
+ignorado.
+
+## Ainda pendente: os 15 duvidosos
+
+Continuam sem ação, à espera de critério humano. São casos onde não dá para afirmar, na
+resolução entregue, se a marca é texto ou textura — rótulo borrado, etiqueta de gola,
+marcas em toldo distante. Lista completa na seção acima.
