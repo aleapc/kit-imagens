@@ -1,11 +1,13 @@
 # Pedido especial — mexico-regen (correção, não banco de destinos)
 
-**2 imagens.** Isto NÃO é um banco de destinos (pintura digital). É uma correção
-pontual de 2 imagens já entregues do acervo **mexico-en**, que usa fotografia
+**5 imagens.** Isto NÃO é um banco de destinos (pintura digital). É uma correção
+pontual de 5 imagens já entregues do acervo **mexico-en**, que usa fotografia
 cinematográfica observacional, não a pintura digital dos bancos de destino.
-Elas foram auditadas de forma independente e **rejeitadas** por violarem a
-própria lista "evitar" do brief original que as gerou. Entregar em
-`entregues/mexico-regen/`, nome exato do `arquivo`, 1536×1024, `.png`, sem texto.
+Elas foram auditadas de forma independente: **B09 e B12 rejeitadas** por
+violarem a própria lista "evitar" do brief original; **B02, B05 e B11 com
+ressalva** (ambiguidade, não violação direta), regeneração autorizada pelo
+dono. Entregar em `entregues/mexico-regen/`, nome exato do `arquivo`,
+1536×1024, `.png`, sem texto.
 
 ## Bloco de estilo — cole ANTES de cada prompt
 
@@ -18,6 +20,45 @@ própria lista "evitar" do brief original que as gerou. Entregar em
 > fotográfica das outras 14 imagens já aprovadas do acervo mexico-en.
 
 ## As imagens
+
+### mexico-b02-greeting-v2.png
+**B02 — Hello before anything else**
+
+Beat: o viajante acabou de abrir a porta de uma pequena loja de bairro pela
+manhã. Ainda no limiar, antes de olhar as prateleiras, cumprimenta a
+atendente: "Buenos días". Ela interrompe o que fazia, olha para a entrada e
+responde "Buenos días. Dígame".
+
+**Por que a versão anterior ficou com ressalva:** a rua visível pela porta
+lia como mediterrânea/espanhola (estuque, ladrilho, varanda de ferro forjado
+estilo andaluz), e o interior lembrava uma especiaria espanhola (potes de
+vidro, ervas penduradas) em vez de uma tienda mexicana contemporânea.
+
+**Nesta versão:** a rua precisa ter sinais inequívocos de México
+contemporâneo (fachada em cor sólida, toldo de lona/metal corrugado, fiação
+aérea visível, calçada de concreto simples — nunca ladrilho/varanda
+andaluza). Interior como tienda/miscelánea comum (prateleiras de produtos
+embalados, geladeira de refrigerante), sem folclore turístico. Evitar
+também: aperto de mão, pessoas posadas sorrindo, balcão de compra já ativo,
+produto central, texto, preços, logotipos, bandeiras.
+
+### mexico-b05-immigration-v2.png
+**B05 — Three answers, then stop**
+
+Beat: no balcão de imigração, o agente pergunta onde o viajante ficará. Ele
+dá a resposta curta e desliza a confirmação da hospedagem ao lado do
+passaporte. O agente confere; o viajante já recolheu as mãos.
+
+**Por que a versão anterior ficou com ressalva:** a farda do agente era
+escura e de corte tático, e havia um dispositivo circular tipo grelha de
+interfone na divisória de vidro que lembrava vagamente um leitor biométrico
+— o brief pede para evitar "dedos em scanner, foto biométrica, EES".
+
+**Nesta versão:** farda de agente de imigração civil, cor neutra
+(azul-marinho ou cinza administrativo, não preto tático), sem dispositivos
+circulares/grelhas na divisória. Tom burocrático-calmo, não posto de
+fronteira militarizado. Evitar também: confronto, agente ameaçador, sorriso
+publicitário, carimbo em destaque, bandeiras, brasões, logotipos.
 
 ### mexico-b09-metro-v2.png
 **B09 — Ticket, rule, vehicle — in that order**

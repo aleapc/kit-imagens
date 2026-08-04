@@ -111,24 +111,27 @@ alcançar o Mac por qualquer meio que não seja um commit.
 Pedido novo, fora do ritmo normal do banco de destinos: `pedidos/6-mexico-regen.json`
 (e a versão legível `pedidos/6-mexico-regen.md`).
 
-**O que é:** correção de 2 imagens do acervo `mexico-en` (B09 e B12) que já tinham
-sido entregues antes, mas foram rejeitadas numa auditoria independente por
-violarem a própria lista "evitar" do brief que as gerou (B09 mostrava uma catraca
-que o brief mandava evitar; B12 tinha o dedo do viajante apontando para a comida
-em vez do espaço ao lado, e a comida virou protagonista glamourosa). O motivo
-completo da rejeição está dentro de cada `cena` do json/md — leia antes de gerar,
-para não repetir o mesmo erro.
+**O que é:** correção de 5 imagens do acervo `mexico-en` que já tinham sido
+entregues antes, mas foram reavaliadas numa auditoria independente: **B09 e
+B12** rejeitadas por violarem a própria lista "evitar" do brief que as gerou
+(B09 mostrava uma catraca que o brief mandava evitar; B12 tinha o dedo do
+viajante apontando para a comida em vez do espaço ao lado, e a comida virou
+protagonista glamourosa); **B02, B05 e B11** com ressalva de ambiguidade
+(B02 lia como rua espanhola, não mexicana; B05 tinha farda/dispositivo que
+lembrava equipamento biométrico; B11 não mostrava a acompanhante nem a mesa
+vazia para dois), regeneração autorizada pelo dono em 2026-08-04. O motivo
+completo de cada uma está dentro da sua `cena` no json/md — leia antes de
+gerar, para não repetir o mesmo erro.
 
 **Importante — não é o estilo do banco de destinos:** o `mexico-en` usa fotografia
-cinematográfica observacional (a mesma das outras 14 imagens já aprovadas do
+cinematográfica observacional (a mesma das outras 11 imagens já aprovadas do
 acervo), não a pintura digital dos bancos `destino-*`. O bloco de estilo está
 dentro do próprio `6-mexico-regen.md` — use esse, não o de `cenas-universais.json`.
 
 **Prioridade:** trate como prioritário — é o item que travou toda a produção do
-México. Depois de entregar as 2, siga o laço normal (bancos `destino-*` na ordem
+México. Depois de entregar as 5, siga o laço normal (bancos `destino-*` na ordem
 já existente).
 
 **O que NÃO fazer (além do já listado acima):** não regenere nenhuma das outras
-14 imagens do `mexico-en` sem um pedido novo explícito — só B09 e B12 estão
-liberadas nesta rodada. As outras 3 com ressalva (B02, B05, B11) ainda estão em
-decisão com o dono; não mexa nelas ainda.
+11 imagens do `mexico-en` sem um pedido novo explícito — só estas 5 estão
+liberadas nesta rodada.
