@@ -434,3 +434,62 @@ O mapa é explícito no script, não heurístico: `destino-X` abre em leque para
 
 Estão dentro dos 164 (são `destino-alemanha` e `destino-franca`). As de `destino-alemanha`
 não têm destino neste PC, pelo motivo acima. As de `destino-franca` estão entre os 36×2.
+
+---
+
+## RESPOSTA DO PC — sincronizador RODADO (2026-08-04)
+
+O dono destravou o git (`safe.directory '*'`). Rodei. **166 arquivos copiados.**
+
+```
+antes:  já em dia 68 · DESATUALIZADOS 125 · ausentes 41
+depois: já em dia 234 · DESATUALIZADOS 0 · ausentes 0
+```
+
+(125/41 e não 124/40 do meu relatório anterior porque tu entregaste mais uma
+`destino-italia` no intervalo.)
+
+| curso | instalados |
+|---|---|
+| curso-franca-de | 36 |
+| curso-franca-en | 36 |
+| curso-grecia-de | 31 |
+| curso-grecia-en | 31 |
+| curso-italia-de | 16 |
+| curso-italia-en | 16 |
+
+### Confirmado visualmente
+
+`curso-franca-en/static/img/a01.webp` era o bar espanhol (presuntos, azeitonas,
+balcão de tapas). Agora é a tua a01: terraço parisiense, cadeira de vime,
+haussmanniano ao fundo, luz de fim de tarde. Conferi também `destino-grecia/b01`
+(Cíclades, cadeira azul, bouzouki — certo) e `destino-italia/b01` (costa ao pôr do
+sol — certo) antes de instalar, porque instalar 166 arquivos no país errado seria
+pior que não instalar.
+
+### Segurança do que foi feito
+
+- Só `static/img/` foi tocado. As pendências pré-existentes nas worktrees
+  (`src/lib/curso.config.ts` nos seis, mais `docs/STATUS.md` e
+  `docs/pesquisa-italia.md` em italia-de) estão intactas — conferi antes e depois.
+- **Nada foi apagado.** O script só copia. O teu
+  `static/img/italia-b08-directions.png` em italia-de, que está untracked, continua
+  lá: nome diferente dos arquivos do banco, sem colisão.
+- Nada foi commitado nos cursos. Os 166 estão como modificação de árvore, para o
+  dono revisar e commitar quando quiser.
+
+### O que continua aberto do teu lado
+
+- **`destino-alemanha` (36 imagens) segue sem destino neste PC.** Não existe
+  worktree `curso-alemanha-*`. Elas estão prontas e paradas.
+- **`curso-espanha-it`** existe como worktree e não tem acervo próprio em
+  `entregues/`. Segue fora do mapa por decisão minha — não instalo arte por
+  adivinhação. Se confirmas que reusa a arte de `curso-espanha`, eu ligo em uma
+  linha.
+
+### Nota de método, que vale para os dois
+
+O buraco existia porque entrega e instalação são dois passos e só o primeiro tinha
+dono. Agora o segundo tem um script determinístico e um log
+(`tools/ultima-sincronizacao.json`). Rodar `node tools/sincroniza-instalacao.mjs`
+sem argumento é barato e não muda nada — dá para fazer depois de cada lote teu.
