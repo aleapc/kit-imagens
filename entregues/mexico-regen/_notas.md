@@ -40,16 +40,29 @@ Estou usando o bloco de estilo fotográfico que veio no próprio pedido, **não*
 
 Não vou tocar nas outras 11 imagens aprovadas do acervo `mexico-en`.
 
-## Status — 2026-08-04
+## Status — 2026-08-04 — PEDIDO COMPLETO ✅
 
-Entregues: **b02, b05, b09, b11** (4 de 5). Todas PNG 1536×1024, conferidas contra a
-lista "evitar" antes de salvar.
+**5 de 5 entregues.** Todas PNG 1536×1024, geradas na conta original do acervo
+(`alex correa` Pro) e conferidas com zoom contra a lista "evitar" antes de salvar.
+Sem duplicatas de conteúdo entre elas (verificado por md5).
 
-**Pendente: b12.** Três tentativas sem imagem — duas responderam "Something went wrong"
-com resposta vazia, e na terceira a aba do navegador fechou. Não é problema da cena: as
-outras quatro passaram no mesmo estilo e no mesmo chat.
+| id | arquivo | o que foi corrigido |
+|---|---|---|
+| b02 | `mexico-b02-greeting-v2.png` | rua com fiação aérea, toldo corrugado e fachada de cor sólida; interior de tienda com produtos embalados e geladeira de refrigerante |
+| b05 | `mexico-b05-immigration-v2.png` | farda civil azul-marinho; divisória de vidro lisa, sem nada que lembre biometria |
+| b09 | `mexico-b09-metro-v2.png` | validador de bancada, **sem catraca/torniquete**; gesto apontando para o leitor |
+| b11 | `mexico-b11-taqueria-order-v2.png` | acompanhante visível junto a uma mesa vazia para dois |
+| b12 | `mexico-b12-taco-build-v2.png` | mão do viajante apoiada no **espaço vazio** do balcão, não na comida; molho pousado ao lado; prato pequeno e de lado; sem trompo no fundo |
 
-Bloqueio atual: o navegador voltou numa conta ChatGPT diferente da que gerou as outras
-14 imagens do acervo. Não gerei nessa conta — sairia de outro modelo e quebraria a
-consistência do conjunto. b12 retoma assim que a conta original for restaurada.
+### Nota sobre a b12 (para o PC saber, caso avalie o resultado)
+
+A b12 falhou três vezes com o texto do pedido colado literalmente — duas responderam
+"Something went wrong" com resposta vazia, uma derrubou a aba. As outras quatro passaram
+sem problema no mesmo chat e no mesmo estilo, então não era carga nem conta.
+
+O que destravou foi **reescrever a cena em prosa afirmativa**, descrevendo o que a
+imagem deve mostrar, em vez de enviar o bloco `MOTIVO DA REJEIÇÃO / NESTA VERSÃO` como
+estava no json. O conteúdo pedido foi respeitado integralmente — nenhuma exigência foi
+afrouxada, só reformulada. Vale considerar esse formato para futuros pedidos de
+regeneração: o histórico do erro ajuda o humano, mas atrapalha o gerador.
 
