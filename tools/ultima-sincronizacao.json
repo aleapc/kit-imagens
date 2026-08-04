@@ -1,0 +1,998 @@
+{
+  "quando": "2026-08-04T23:01:41.182Z",
+  "modo": "dry-run",
+  "resumo": {
+    "iguais": 68,
+    "desatualizados": 124,
+    "ausentes": 40,
+    "copiados": 0
+  },
+  "itens": [
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-de",
+      "arquivo": "a01.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-de",
+      "arquivo": "a02.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-de",
+      "arquivo": "a03.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-de",
+      "arquivo": "a04.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-de",
+      "arquivo": "a05.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-de",
+      "arquivo": "a06.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-de",
+      "arquivo": "a07.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-de",
+      "arquivo": "a08.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-de",
+      "arquivo": "b01.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-de",
+      "arquivo": "b02.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-de",
+      "arquivo": "b03.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-de",
+      "arquivo": "b04.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-de",
+      "arquivo": "b05.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-de",
+      "arquivo": "b06.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-de",
+      "arquivo": "b07.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-de",
+      "arquivo": "b08.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-de",
+      "arquivo": "b09.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-de",
+      "arquivo": "b10.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-de",
+      "arquivo": "b11.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-de",
+      "arquivo": "b12.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-de",
+      "arquivo": "b13.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-de",
+      "arquivo": "b14.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-de",
+      "arquivo": "b15.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-de",
+      "arquivo": "b16.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-de",
+      "arquivo": "b17.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-de",
+      "arquivo": "b18.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-de",
+      "arquivo": "i01.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-de",
+      "arquivo": "i02.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-de",
+      "arquivo": "i03.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-de",
+      "arquivo": "i04.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-de",
+      "arquivo": "i05.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-de",
+      "arquivo": "i06.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-de",
+      "arquivo": "i07.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-de",
+      "arquivo": "i08.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-de",
+      "arquivo": "i09.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-de",
+      "arquivo": "i10.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-en",
+      "arquivo": "a01.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-en",
+      "arquivo": "a02.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-en",
+      "arquivo": "a03.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-en",
+      "arquivo": "a04.webp",
+      "estado": "AUSENTE"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-en",
+      "arquivo": "a05.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-en",
+      "arquivo": "a06.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-en",
+      "arquivo": "a07.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-en",
+      "arquivo": "a08.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-en",
+      "arquivo": "b01.webp",
+      "estado": "AUSENTE"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-en",
+      "arquivo": "b02.webp",
+      "estado": "AUSENTE"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-en",
+      "arquivo": "b03.webp",
+      "estado": "AUSENTE"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-en",
+      "arquivo": "b04.webp",
+      "estado": "AUSENTE"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-en",
+      "arquivo": "b05.webp",
+      "estado": "AUSENTE"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-en",
+      "arquivo": "b06.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-en",
+      "arquivo": "b07.webp",
+      "estado": "AUSENTE"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-en",
+      "arquivo": "b08.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-en",
+      "arquivo": "b09.webp",
+      "estado": "AUSENTE"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-en",
+      "arquivo": "b10.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-en",
+      "arquivo": "b11.webp",
+      "estado": "AUSENTE"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-en",
+      "arquivo": "b12.webp",
+      "estado": "AUSENTE"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-en",
+      "arquivo": "b13.webp",
+      "estado": "AUSENTE"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-en",
+      "arquivo": "b14.webp",
+      "estado": "AUSENTE"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-en",
+      "arquivo": "b15.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-en",
+      "arquivo": "b16.webp",
+      "estado": "AUSENTE"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-en",
+      "arquivo": "b17.webp",
+      "estado": "AUSENTE"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-en",
+      "arquivo": "b18.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-en",
+      "arquivo": "i01.webp",
+      "estado": "AUSENTE"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-en",
+      "arquivo": "i02.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-en",
+      "arquivo": "i03.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-en",
+      "arquivo": "i04.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-en",
+      "arquivo": "i05.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-en",
+      "arquivo": "i06.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-en",
+      "arquivo": "i07.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-en",
+      "arquivo": "i08.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-en",
+      "arquivo": "i09.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-franca",
+      "curso": "curso-franca-en",
+      "arquivo": "i10.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-grecia",
+      "curso": "curso-grecia-de",
+      "arquivo": "a01.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-grecia",
+      "curso": "curso-grecia-de",
+      "arquivo": "a02.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-grecia",
+      "curso": "curso-grecia-de",
+      "arquivo": "a03.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-grecia",
+      "curso": "curso-grecia-de",
+      "arquivo": "b01.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-grecia",
+      "curso": "curso-grecia-de",
+      "arquivo": "b02.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-grecia",
+      "curso": "curso-grecia-de",
+      "arquivo": "b03.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-grecia",
+      "curso": "curso-grecia-de",
+      "arquivo": "b04.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-grecia",
+      "curso": "curso-grecia-de",
+      "arquivo": "b05.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-grecia",
+      "curso": "curso-grecia-de",
+      "arquivo": "b06.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-grecia",
+      "curso": "curso-grecia-de",
+      "arquivo": "b07.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-grecia",
+      "curso": "curso-grecia-de",
+      "arquivo": "b08.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-grecia",
+      "curso": "curso-grecia-de",
+      "arquivo": "b09.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-grecia",
+      "curso": "curso-grecia-de",
+      "arquivo": "b10.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-grecia",
+      "curso": "curso-grecia-de",
+      "arquivo": "b11.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-grecia",
+      "curso": "curso-grecia-de",
+      "arquivo": "b12.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-grecia",
+      "curso": "curso-grecia-de",
+      "arquivo": "b13.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-grecia",
+      "curso": "curso-grecia-de",
+      "arquivo": "b14.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-grecia",
+      "curso": "curso-grecia-de",
+      "arquivo": "b15.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-grecia",
+      "curso": "curso-grecia-de",
+      "arquivo": "b16.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-grecia",
+      "curso": "curso-grecia-de",
+      "arquivo": "b17.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-grecia",
+      "curso": "curso-grecia-de",
+      "arquivo": "b18.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-grecia",
+      "curso": "curso-grecia-de",
+      "arquivo": "i01.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-grecia",
+      "curso": "curso-grecia-de",
+      "arquivo": "i02.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-grecia",
+      "curso": "curso-grecia-de",
+      "arquivo": "i03.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-grecia",
+      "curso": "curso-grecia-de",
+      "arquivo": "i04.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-grecia",
+      "curso": "curso-grecia-de",
+      "arquivo": "i05.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-grecia",
+      "curso": "curso-grecia-de",
+      "arquivo": "i06.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-grecia",
+      "curso": "curso-grecia-de",
+      "arquivo": "i07.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-grecia",
+      "curso": "curso-grecia-de",
+      "arquivo": "i08.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-grecia",
+      "curso": "curso-grecia-de",
+      "arquivo": "i09.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-grecia",
+      "curso": "curso-grecia-de",
+      "arquivo": "i10.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-grecia",
+      "curso": "curso-grecia-en",
+      "arquivo": "a01.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-grecia",
+      "curso": "curso-grecia-en",
+      "arquivo": "a02.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-grecia",
+      "curso": "curso-grecia-en",
+      "arquivo": "a03.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-grecia",
+      "curso": "curso-grecia-en",
+      "arquivo": "b01.webp",
+      "estado": "AUSENTE"
+    },
+    {
+      "acervo": "destino-grecia",
+      "curso": "curso-grecia-en",
+      "arquivo": "b02.webp",
+      "estado": "AUSENTE"
+    },
+    {
+      "acervo": "destino-grecia",
+      "curso": "curso-grecia-en",
+      "arquivo": "b03.webp",
+      "estado": "AUSENTE"
+    },
+    {
+      "acervo": "destino-grecia",
+      "curso": "curso-grecia-en",
+      "arquivo": "b04.webp",
+      "estado": "AUSENTE"
+    },
+    {
+      "acervo": "destino-grecia",
+      "curso": "curso-grecia-en",
+      "arquivo": "b05.webp",
+      "estado": "AUSENTE"
+    },
+    {
+      "acervo": "destino-grecia",
+      "curso": "curso-grecia-en",
+      "arquivo": "b06.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-grecia",
+      "curso": "curso-grecia-en",
+      "arquivo": "b07.webp",
+      "estado": "AUSENTE"
+    },
+    {
+      "acervo": "destino-grecia",
+      "curso": "curso-grecia-en",
+      "arquivo": "b08.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-grecia",
+      "curso": "curso-grecia-en",
+      "arquivo": "b09.webp",
+      "estado": "AUSENTE"
+    },
+    {
+      "acervo": "destino-grecia",
+      "curso": "curso-grecia-en",
+      "arquivo": "b10.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-grecia",
+      "curso": "curso-grecia-en",
+      "arquivo": "b11.webp",
+      "estado": "AUSENTE"
+    },
+    {
+      "acervo": "destino-grecia",
+      "curso": "curso-grecia-en",
+      "arquivo": "b12.webp",
+      "estado": "AUSENTE"
+    },
+    {
+      "acervo": "destino-grecia",
+      "curso": "curso-grecia-en",
+      "arquivo": "b13.webp",
+      "estado": "AUSENTE"
+    },
+    {
+      "acervo": "destino-grecia",
+      "curso": "curso-grecia-en",
+      "arquivo": "b14.webp",
+      "estado": "AUSENTE"
+    },
+    {
+      "acervo": "destino-grecia",
+      "curso": "curso-grecia-en",
+      "arquivo": "b15.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-grecia",
+      "curso": "curso-grecia-en",
+      "arquivo": "b16.webp",
+      "estado": "AUSENTE"
+    },
+    {
+      "acervo": "destino-grecia",
+      "curso": "curso-grecia-en",
+      "arquivo": "b17.webp",
+      "estado": "AUSENTE"
+    },
+    {
+      "acervo": "destino-grecia",
+      "curso": "curso-grecia-en",
+      "arquivo": "b18.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-grecia",
+      "curso": "curso-grecia-en",
+      "arquivo": "i01.webp",
+      "estado": "AUSENTE"
+    },
+    {
+      "acervo": "destino-grecia",
+      "curso": "curso-grecia-en",
+      "arquivo": "i02.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-grecia",
+      "curso": "curso-grecia-en",
+      "arquivo": "i03.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-grecia",
+      "curso": "curso-grecia-en",
+      "arquivo": "i04.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-grecia",
+      "curso": "curso-grecia-en",
+      "arquivo": "i05.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-grecia",
+      "curso": "curso-grecia-en",
+      "arquivo": "i06.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-grecia",
+      "curso": "curso-grecia-en",
+      "arquivo": "i07.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-grecia",
+      "curso": "curso-grecia-en",
+      "arquivo": "i08.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-grecia",
+      "curso": "curso-grecia-en",
+      "arquivo": "i09.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-grecia",
+      "curso": "curso-grecia-en",
+      "arquivo": "i10.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-italia",
+      "curso": "curso-italia-de",
+      "arquivo": "b01.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-italia",
+      "curso": "curso-italia-de",
+      "arquivo": "b02.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-italia",
+      "curso": "curso-italia-de",
+      "arquivo": "b03.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-italia",
+      "curso": "curso-italia-de",
+      "arquivo": "b04.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-italia",
+      "curso": "curso-italia-de",
+      "arquivo": "b05.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-italia",
+      "curso": "curso-italia-de",
+      "arquivo": "b06.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-italia",
+      "curso": "curso-italia-de",
+      "arquivo": "b07.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-italia",
+      "curso": "curso-italia-de",
+      "arquivo": "b08.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-italia",
+      "curso": "curso-italia-de",
+      "arquivo": "b09.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-italia",
+      "curso": "curso-italia-de",
+      "arquivo": "b10.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-italia",
+      "curso": "curso-italia-de",
+      "arquivo": "b11.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-italia",
+      "curso": "curso-italia-de",
+      "arquivo": "b12.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-italia",
+      "curso": "curso-italia-de",
+      "arquivo": "b13.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-italia",
+      "curso": "curso-italia-de",
+      "arquivo": "b14.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-italia",
+      "curso": "curso-italia-de",
+      "arquivo": "b15.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-italia",
+      "curso": "curso-italia-en",
+      "arquivo": "b01.webp",
+      "estado": "AUSENTE"
+    },
+    {
+      "acervo": "destino-italia",
+      "curso": "curso-italia-en",
+      "arquivo": "b02.webp",
+      "estado": "AUSENTE"
+    },
+    {
+      "acervo": "destino-italia",
+      "curso": "curso-italia-en",
+      "arquivo": "b03.webp",
+      "estado": "AUSENTE"
+    },
+    {
+      "acervo": "destino-italia",
+      "curso": "curso-italia-en",
+      "arquivo": "b04.webp",
+      "estado": "AUSENTE"
+    },
+    {
+      "acervo": "destino-italia",
+      "curso": "curso-italia-en",
+      "arquivo": "b05.webp",
+      "estado": "AUSENTE"
+    },
+    {
+      "acervo": "destino-italia",
+      "curso": "curso-italia-en",
+      "arquivo": "b06.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-italia",
+      "curso": "curso-italia-en",
+      "arquivo": "b07.webp",
+      "estado": "AUSENTE"
+    },
+    {
+      "acervo": "destino-italia",
+      "curso": "curso-italia-en",
+      "arquivo": "b08.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-italia",
+      "curso": "curso-italia-en",
+      "arquivo": "b09.webp",
+      "estado": "AUSENTE"
+    },
+    {
+      "acervo": "destino-italia",
+      "curso": "curso-italia-en",
+      "arquivo": "b10.webp",
+      "estado": "DESATUALIZADO"
+    },
+    {
+      "acervo": "destino-italia",
+      "curso": "curso-italia-en",
+      "arquivo": "b11.webp",
+      "estado": "AUSENTE"
+    },
+    {
+      "acervo": "destino-italia",
+      "curso": "curso-italia-en",
+      "arquivo": "b12.webp",
+      "estado": "AUSENTE"
+    },
+    {
+      "acervo": "destino-italia",
+      "curso": "curso-italia-en",
+      "arquivo": "b13.webp",
+      "estado": "AUSENTE"
+    },
+    {
+      "acervo": "destino-italia",
+      "curso": "curso-italia-en",
+      "arquivo": "b14.webp",
+      "estado": "AUSENTE"
+    },
+    {
+      "acervo": "destino-italia",
+      "curso": "curso-italia-en",
+      "arquivo": "b15.webp",
+      "estado": "DESATUALIZADO"
+    }
+  ],
+  "naoMapeados": [],
+  "destinosAusentes": []
+}

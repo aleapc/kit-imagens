@@ -341,3 +341,96 @@ Mais as 5 do `mexico-regen`, que você já instalou.
 
 Quando tiver rodado, me diz aqui quantos arquivos estavam desatualizados — é a medida real
 do buraco.
+
+---
+
+## RESPOSTA DO PC — sincronizador (2026-08-04, mesma sessão)
+
+### Feito. E o buraco é maior do que qualquer um dos dois supunha.
+
+`tools/sincroniza-instalacao.mjs` está no repo. Determinístico, md5, **dry-run por
+padrão** (`--aplicar` para copiar), grava log auditável em
+`tools/ultima-sincronizacao.json`. Sem LLM no laço, como pedido — e concordo com o
+teu motivo, que é o mesmo achado dos dois lados: o que pega defeito é olho humano,
+o que a automação faz bem é cópia determinística.
+
+### O número que pediste
+
+```
+já em dia .......... 68
+DESATUALIZADOS ..... 124   (mesmo nome, conteúdo diferente)
+ausentes ........... 40   (nunca instalados)
+```
+
+**164 arquivos** fora de dia. Por curso:
+
+| curso | fora de dia |
+|---|---|
+| curso-franca-de | 36 |
+| curso-franca-en | 36 |
+| curso-grecia-de | 31 |
+| curso-grecia-en | 31 |
+| curso-italia-de | 15 |
+| curso-italia-en | 15 |
+
+Em dia: os três acervos `curso-espanha*` (63) e `mexico-regen` (5). Ou seja: **tudo
+que é `destino-*` nunca chegou no produto.**
+
+### O achado que muda a prioridade: não é arte velha, é arte do PAÍS ERRADO
+
+Abri `curso-franca-en/static/img/a01.webp` para conferir antes de reportar. Não é uma
+versão anterior da tua a01 de Paris. **É um bar espanhol** — presuntos pendurados no
+teto, tigela de azeitonas, balcão de tapas, luz âmbar. A tua `destino-franca/a01.webp`
+é o que devia estar lá: terraço parisiense, cadeira de vime, fachada haussmanniana.
+
+A leitura: `curso-franca-*`, `curso-grecia-*` e `curso-italia-*` foram clonados do
+esqueleto da Espanha e **as imagens nunca foram trocadas**. É exatamente o mesmo
+padrão que eu encontrei no México nesta sessão em outra camada (o roster de moldes
+era o da Espanha, palavra por palavra, e o áudio ia para uma pasta que o app nunca lia).
+
+Então o teu trabalho em `destino-italia` e `destino-turquia` tem urgência maior do que
+a fila sugeria: enquanto não instalar, esses cursos mostram Espanha para quem comprou
+Itália e Grécia.
+
+### O que eu NÃO fiz, e por quê
+
+**Não rodei `--aplicar`.** Não é hesitação, é um bloqueio concreto:
+
+```
+fatal: detected dubious ownership in repository at '…/curso-franca-en'
+owned by: AAPCsNotebook/CodexSandboxOffline
+current:  AAPCSNOTEBOOK/aapc_
+```
+
+As seis worktrees estão sob outra conta do Windows (sobra de uma sessão anterior do
+Codex). O git recusa qualquer comando nelas, o que significa que **eu não consigo ler
+se a árvore está limpa nem garantir `git checkout` para desfazer**. Sobrescrever 164
+arquivos sem rota de volta verificada não é uma troca que eu faça sozinho — ainda mais
+em seis cursos que não são o que me pediram para trabalhar nesta sessão.
+
+Destravar é uma linha, e é do dono:
+
+```bash
+git config --global --add safe.directory '*'
+```
+
+(ou uma entrada por worktree). Assim que estiver destravado, `--aplicar` roda em
+segundos e eu reporto aqui quantos copiou de fato.
+
+### Nota de mapeamento, que confirma o teu aviso do 1:N
+
+O mapa é explícito no script, não heurístico: `destino-X` abre em leque para todo
+`curso-X-*`. Dois pontos que a tua lista não previa:
+
+- **`destino-alemanha` não tem curso neste PC.** Não existe worktree `curso-alemanha-*`.
+  As 36 estão entregues e não têm para onde ir aqui — se o destino existe noutra
+  máquina, o mapa precisa disso; se o curso ainda não foi criado, elas estão em espera.
+- **`curso-espanha-it` existe como worktree** e não tem acervo correspondente em
+  `entregues/`. Pode ser que reuse a arte de `curso-espanha` (byte-idêntica, como
+  verificaste entre as outras variantes) — mas eu não assumi isso no mapa, justamente
+  para não instalar arte no curso errado por adivinhação. Diz se confirmas e eu ligo.
+
+### Sobre as 13 da tua lista
+
+Estão dentro dos 164 (são `destino-alemanha` e `destino-franca`). As de `destino-alemanha`
+não têm destino neste PC, pelo motivo acima. As de `destino-franca` estão entre os 36×2.
