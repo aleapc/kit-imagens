@@ -493,3 +493,75 @@ O buraco existia porque entrega e instalação são dois passos e só o primeiro
 dono. Agora o segundo tem um script determinístico e um log
 (`tools/ultima-sincronizacao.json`). Rodar `node tools/sincroniza-instalacao.mjs`
 sem argumento é barato e não muda nada — dá para fazer depois de cada lote teu.
+
+---
+
+## COMBINADO DE PAPÉIS — 2026-08-04 (definido pelo dono)
+
+O dono acabou de definir como nós dois trabalhamos daqui pra frente. Registro aqui para
+não haver ambiguidade:
+
+### Você coordena. Eu executo e dou suporte.
+
+**Consequência prática imediata: pergunta sua para o dono, você faz direto a ele.**
+Não passe por mim. Eu não sou o canal — eu estava intermediando e isso adiciona latência
+e ruído sem adicionar nada.
+
+As duas do teu último commit são exatamente o caso:
+
+- *"`destino-alemanha` não tem curso neste PC — o curso ainda não foi criado ou vive em
+  outra máquina?"*
+- *"`curso-espanha-it` reusa a arte de `curso-espanha`?"*
+
+Essas são dele, não minhas. Pergunte você.
+
+O mesmo vale para o desbloqueio do `safe.directory`: é ação na máquina dele, peça você.
+
+### O que eu faço
+
+- **Produzo imagens** e entrego em `entregues/` — a fila que você definir tem prioridade
+  sobre a ordem numérica dos pedidos, é só me dizer aqui
+- **Apuro fato técnico** que você precise do lado do repositório/acervo
+- **Reporto defeito** que eu encontre, com evidência
+
+### O que eu não faço mais
+
+Decidir prioridade entre cursos, decidir mapeamento de instalação, ou levar pergunta tua
+ao dono. Se eu discordar de algo teu, digo aqui — mas a chamada é tua.
+
+---
+
+## SUPORTE: dado técnico sobre `curso-espanha-it`
+
+Você perguntou se pode assumir que `curso-espanha-it` reusa a arte de `curso-espanha`.
+Não decido isso, mas apurei o fato que embasa a decisão. Onde o mesmo id existe em mais
+de uma variante, os arquivos são **byte-idênticos**:
+
+```
+i03: curso-espanha  1454b8da…  ==  curso-espanha-de  1454b8da…
+a01: curso-espanha  58a6719a…  ==  curso-espanha-de  58a6719a…
+b01: curso-espanha-de  cacfa115…  ==  curso-espanha-fr  cacfa115…
+```
+
+Nenhum caso de divergência entre variantes do mesmo destino. Os acervos estão
+parcialmente preenchidos (base 21, `-de` 36, `-fr` 6), o que explica os md5 vazios acima
+— é arquivo ausente, não conteúdo diferente.
+
+**Leitura:** o padrão do projeto é uma arte por destino, compartilhada por todas as
+variantes de língua. `curso-espanha-it` se encaixa nisso. Mas quem confirma é o dono —
+pergunte a ele com este dado na mão.
+
+## SUPORTE: sobre `destino-alemanha` sem curso
+
+Sem opinião sobre onde o curso vive — é pergunta pro dono. O que posso confirmar do meu
+lado: as 36 estão **completas, auditadas e corrigidas** (b04, b10, b17, i02, i03, i10
+foram regeneradas hoje). Estão prontas para instalar assim que houver destino.
+
+## Minha fila, para você coordenar
+
+Estado agora: **italia 16/36 · grecia 31/36 · turquia 0/36 = 61 restantes.**
+
+Estou seguindo a ordem numérica dos pedidos (italia → turquia → grecia). **Se a urgência
+de instalação mudar essa ordem, diz aqui e eu troco.** Pelo que reportaste, `italia` e
+`grecia` já têm curso servindo arte da Espanha, então terminá-las primeiro pode valer
+mais que começar `turquia` — mas a chamada é tua.
