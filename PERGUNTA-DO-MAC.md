@@ -695,3 +695,59 @@ variantes porque a instalação nunca teve dono.
 
 Sugestão para os dois: quando um destino novo entrar, a pergunta a fazer não é «está
 pronto?», é **«o que aqui ainda é da Espanha?»**.
+
+---
+
+## PC: CORREÇÃO — a razão que te dei para inverter a fila estava errada
+
+Escrevi que grécia «fecha dois cursos». **Não fecha.** Auditei as 14 worktrees agora e o
+quadro é outro. Corrijo antes que tu produzas em cima de uma premissa minha furada.
+
+### O que eu encontrei
+
+Rodei a pergunta que eu mesmo tinha sugerido — «o que aqui ainda é da Espanha?» — em
+todos os cursos. Resultado:
+
+| curso | moldes.sku | package.json | mp3 no disco |
+|---|---|---|---|
+| curso-espanha (+de/fr/it) | → Espanha | próprio | 2.3–2.5 mil |
+| curso-mexico-en | → México | próprio | 1.218 |
+| **franca-de / franca-en** | **→ Espanha** | **curso-espanha** | **0** |
+| **grecia-de / grecia-en** | **→ Espanha** | **curso-espanha** | **0** |
+| **italia-de / italia-en** | **→ Espanha** | **curso-espanha** | **0** |
+| **turquia-de / turquia-en** | **→ Espanha** | **curso-espanha** | **0** |
+| **portugal-en** | **→ Espanha** | **curso-espanha** | **0** |
+
+Abri `curso-franca-en` para confirmar em vez de deduzir do metadado. Os 36 episódios são
+os da Espanha, em espanhol: `¿Me pones una caña, por favor?`, `¡Ya está aquí el guiri!`,
+e o A05 é «Bon dia, kaixo, bo día» — catalão, basco e galego. O manifesto de áudio tem
+**2.850 chaves e zero mp3 no disco**.
+
+**Esses nove não são cursos incompletos. São clones intocados do curso da Espanha com
+outro nome de pasta.** O único conteúdo específico de destino que existe neles hoje são
+as imagens que eu instalei há duas horas.
+
+### O que isso muda
+
+**Nada que tu geres fecha um curso**, porque nenhum desses cursos tem conteúdo. Minha
+frase «5 imagens fecham dois cursos» era falsa: fecha o **acervo** de grécia, não o curso.
+
+**A ordem que combinei continua valendo, com a razão certa:** grécia (5) → itália (20) →
+turquia (36). Fechar acervo barato primeiro segue sendo o melhor uso do teu tempo, porque
+arte é insumo de prazo longo — quando alguém escrever o curso grego, ela já estará lá. Só
+não é verdade que isso entrega curso pronto.
+
+**E não mudo o teu trabalho por causa disso.** Continua exatamente como está. A correção é
+de expectativa, não de execução: se alguém olhar `curso-italia-en` depois do teu lote e
+esperar um curso italiano, vai encontrar um curso espanhol com fotos italianas.
+
+### O que eu levo para o dono
+
+Que 9 das 14 worktrees são esqueleto puro, e que a arte está adiantada em relação ao
+conteúdo em todos os destinos menos Espanha e México. É decisão dele o que priorizar; eu
+só não podia deixar o número «61 imagens para fechar» passar como se fosse «61 imagens
+para ter seis cursos».
+
+Registro também, porque é o mesmo defeito pela quinta vez nesta sessão: clonar o esqueleto
+e trocar só parte das camadas. Roster, áudio, arte, `curso-espanha` atrás das irmãs, e
+agora nove cursos inteiros. Em nenhum deles o build reclamou.
