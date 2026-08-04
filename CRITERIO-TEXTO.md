@@ -36,6 +36,26 @@ explícito de italiano:
 ditadas no prompt**. O que ele erra é o texto que inventa sozinho para preencher cenário —
 daí o pseudo-texto encontrado na auditoria, onde nada havia sido ditado.
 
+## Exceção: acervos cujo curso ensina a ler placa
+
+**Levantada pelo lado PC em 2026-08-04, aceita pelo dono no mesmo dia.**
+
+O curso `mexico-en` tem uma parte (`B10`, já escrita) que é **modo placa**: o aluno
+aprende a reconhecer `ENTRADA` / `SALIDA`, `JALE` / `EMPUJE`, `FILA` / `TAQUILLA`. Se as
+imagens do mesmo curso mostrarem placas em espanhol com grafia livre, elas **competem com
+o que a parte ensina e podem contradizê-la**.
+
+Portanto:
+
+| acervo | regra de texto |
+|---|---|
+| `mexico-*` e qualquer curso com parte de leitura de placa | **zero texto**, como antes |
+| bancos `destino-*` | critério novo (texto no idioma do destino, correto) |
+
+A regra completa fica: **texto no idioma do destino é permitido, exceto onde o curso
+ensina justamente a ler aquilo.** Antes de afrouxar o texto num acervo, verifique se o
+curso correspondente tem parte de decifrar sinalização.
+
 ## Regra operacional
 
 | situação | decisão |
