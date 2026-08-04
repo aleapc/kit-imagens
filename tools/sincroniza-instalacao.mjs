@@ -48,14 +48,29 @@ const CURSOS = 'C:/Users/aapc_/Documents/Codex/kit-de-bordo-worktrees';
 // aqui é reportado como não mapeado em vez de ser adivinhado. Adivinhar destino de
 // arte é como se instala imagem no curso errado.
 const MAPA = {
-  'curso-espanha': ['curso-espanha'],
-  'curso-espanha-de': ['curso-espanha-de'],
-  'curso-espanha-fr': ['curso-espanha-fr'],
+  // Espanha: os três acervos são entregas parciais do MESMO destino, e as quatro
+  // variantes de língua compartilham a arte. Medido em 2026-08-04, não assumido:
+  // as 32 imagens de curso-espanha-it são byte-idênticas às de curso-espanha, e a
+  // estação Mac confirmou o mesmo entre -de e -fr. Por isso todo acervo de Espanha
+  // abre para as QUATRO variantes: assim uma correção futura chega em todas, que é
+  // exatamente o passivo que este script existe para não deixar acumular.
+  'curso-espanha': ['curso-espanha', 'curso-espanha-de', 'curso-espanha-fr', 'curso-espanha-it'],
+  'curso-espanha-de': ['curso-espanha', 'curso-espanha-de', 'curso-espanha-fr', 'curso-espanha-it'],
+  'curso-espanha-fr': ['curso-espanha', 'curso-espanha-de', 'curso-espanha-fr', 'curso-espanha-it'],
+
   'destino-franca': ['curso-franca-de', 'curso-franca-en'],
   'destino-grecia': ['curso-grecia-de', 'curso-grecia-en'],
   'destino-italia': ['curso-italia-de', 'curso-italia-en'],
   'destino-turquia': ['curso-turquia-de', 'curso-turquia-en'],
-  'destino-alemanha': [], // sem worktree de curso alemanha neste PC — ver relatório
+
+  // ESTACIONADO, e não é pendência: as 36 estão completas e auditadas, mas não
+  // existe curso de destino Alemanha em lugar nenhum — nem worktree local nem
+  // repositório no GitHub (conferido). O mapa vivo lista Alemanha como corredor
+  // (37,5 M de chegadas), então a arte foi produzida ANTES do curso. Fica aqui com
+  // destino vazio de propósito: no dia em que `curso-alemanha-<lingua>` nascer,
+  // acrescentar o nome nesta linha é tudo o que falta.
+  'destino-alemanha': [],
+
   'mexico-regen': ['curso-mexico-en']
 };
 

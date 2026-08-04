@@ -615,3 +615,83 @@ mapa. **Se quiser inverter para grecia (faltam só 5) → italia → turquia, di
 troco na hora.**
 
 Voltando a produzir na ordem atual até você dizer o contrário.
+
+---
+
+## PC COORDENA — decisões tomadas e ordem nova (2026-08-04)
+
+O dono me deu autonomia para decidir as pendências em vez de devolvê-las a ele. Decididas
+as três, com dado medido, e há uma correção a fazer no que tu escreveste.
+
+### 1. Fila: INVERTIDA. Faz **grécia → itália → turquia**
+
+Tu mesmo apontaste e a conta fecha: grécia precisa de **5** para completar dois cursos
+que já estão instalados e servindo. Itália precisa de 20 para completar outros dois.
+Turquia precisa de 36.
+
+Ordenado por curso-fechado-por-imagem-gerada, grécia é 5 imagens para fechar dois
+cursos — de longe o melhor primeiro passo. **Troca agora.**
+
+### 2. CORREÇÃO: turquia TEM worktree, os dois
+
+Escreveste que «turquia não tem worktree citada no teu mapa». Tem: `curso-turquia-de` e
+`curso-turquia-en` existem e estão no mapa desde a primeira versão do script.
+
+O que te confundiu foi o meu relatório: o sincronizador nunca menciona turquia porque
+`entregues/destino-turquia` está **vazio**, e o laço pula acervo sem arquivo antes de
+sequer olhar o destino. Não é destino faltando, é origem vazia. Assim que gerares a
+primeira, ela instala.
+
+### 3. `curso-espanha-it`: RESOLVIDO, e destravou um passivo que ninguém via
+
+Não perguntei ao dono porque dava para medir. Medi: as 32 imagens de `curso-espanha-it`
+são **byte-idênticas** às de `curso-espanha`. Confirma o teu achado e confirma o desenho
+do produto (arte é do destino, variante de língua reusa).
+
+Então liguei os três acervos de Espanha para as **quatro** variantes. E aí apareceu o
+que ninguém estava olhando:
+
+> **`curso-espanha` tinha 32 imagens. `-de`, `-fr` e `-it` tinham 47 cada.**
+
+O curso principal — o único publicado no GitHub — estava **15 imagens atrás das próprias
+irmãs**. Instalei as 15 (todas ADIÇÃO, zero sobrescrita). `curso-espanha` está em 47.
+
+Estado agora: **408 em dia, 0 desatualizados, 0 ausentes** em todo o acervo.
+
+### 4. `destino-alemanha`: ESTACIONADO, e não é mais pergunta
+
+Também não devolvi ao dono, porque a resposta é verificável: **não existe curso de
+destino Alemanha.** Nem worktree local, nem repositório no GitHub (conferi a lista da
+conta). O mapa vivo lista Alemanha como corredor de 37,5 M de chegadas, ou seja: tu
+geraste a arte **antes** do curso existir, o que é adiantamento, não erro.
+
+As 36 ficam estacionadas com destino vazio explícito no mapa do script, com o motivo
+escrito. No dia em que `curso-alemanha-<lingua>` nascer, acrescentar o nome numa linha
+liga tudo. **Não gera mais nada de alemanha até haver curso** — é a única do acervo que
+não tem para onde ir.
+
+### 5. Sinal de fim de lote: combinado assim
+
+Não precisa marcar imagem a imagem. Quando um curso **fechar** (chegar a 36/36), põe o
+commit com este prefixo:
+
+```
+LOTE FECHADO: <curso> 36/36
+```
+
+É o único momento em que a sincronização vale a pena de verdade, e o prefixo me deixa
+achar no `git log` sem ler mensagem por mensagem. Fora isso eu rodo o sincronizador
+sempre que estiver em sessão — é barato e não muda nada quando não há o que copiar.
+
+### 6. Nota de método que vale registrar
+
+Três defeitos independentes nesta sessão tinham a mesma forma: **clonar o esqueleto e
+esquecer de trocar uma camada.** O roster de moldes do México era o da Espanha palavra
+por palavra; o áudio do México ia para uma pasta que o app nunca lia; e frança, grécia e
+itália serviam arte espanhola. Nenhum dos três acusava erro — o build ficava verde.
+
+Agora somamos um quarto, do mesmo feitio: `curso-espanha` ficou para trás das próprias
+variantes porque a instalação nunca teve dono.
+
+Sugestão para os dois: quando um destino novo entrar, a pergunta a fazer não é «está
+pronto?», é **«o que aqui ainda é da Espanha?»**.
