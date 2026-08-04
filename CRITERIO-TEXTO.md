@@ -65,7 +65,14 @@ O que muda é a **correção**: em vez de remover o texto, agora é possível di
 certa no idioma do destino — o que produz uma cena mais verossímil que uma parede vazia.
 
 Os itens antes classificados como violação por serem "logotipo" ou "dígito" saem da lista:
-- cruz verde de farmácia (`b17` em alemanha e franca) → aceitável
-- teclado numérico da maquininha (`franca b14`) → aceitável
+- `franca b17` — só a cruz verde de farmácia → aceitável
+- `franca b14` — só o teclado numérico → aceitável
 
-**Violações remanescentes: 12** (era 15).
+`alemanha b17` **permanece**: além da cruz, tem rótulos com letras em caixas de remédio.
+
+**Violações remanescentes: 13** (era 15).
+
+| curso | ids |
+|---|---|
+| destino-alemanha | b04, b10, b17, i02, i03, i10 |
+| destino-franca | a01, b02, b06, i02, i03, i05, i07 |
