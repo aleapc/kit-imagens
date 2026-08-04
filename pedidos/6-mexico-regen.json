@@ -1,0 +1,22 @@
+{
+  "curso": "mexico-regen",
+  "banco": false,
+  "ambiente": "México contemporâneo, sem folclore (aeroporto, taquería, terminal local) — mesma coleção fotográfica do acervo mexico-en, NÃO o estilo de pintura digital do banco de destinos.",
+  "estilo": "Foto 3:2 cinematográfica e observacional, 1536×1024, câmera atrás do ombro do viajante, luz natural quente, profundidade rasa, personagens não posados, rostos secundários e contidos, faixa inferior visualmente silenciosa para o título do card. Zero texto, letra, número, bandeira, brasão, logotipo, sombrero ou estética de banco de imagens. Este NÃO é o bloco de estilo do banco de destinos (pintura digital) — é a linguagem fotográfica já usada nas outras 14 imagens aprovadas do acervo mexico-en.",
+  "entregar_em": "entregues/mexico-regen/",
+  "observacao": "Estas 2 imagens ja existiam e foram entregues antes, mas foram REJEITADAS numa auditoria independente por violarem o proprio 'evitar' do brief original. Este pedido substitui as anteriores. Motivo da rejeicao incluido em cada 'cena' abaixo, para nao repetir o erro.",
+  "arquivos": [
+    {
+      "id": "b09",
+      "arquivo": "mexico-b09-metro-v2.png",
+      "titulo": "B09 — Ticket, rule, vehicle — in that order",
+      "cena": "BEAT: dentro de um terminal local de onibus, o viajante ja comprou o boleto e encontra uma pequena maquina leitora antes de seguir. Ele pergunta '¿Tengo que validar el boleto?'; uma funcionaria responde 'Si, en esa maquina' e aponta para o leitor. O boleto ja se move da mao do viajante em direcao a maquina, antes de ele procurar a plataforma. Foto 3:2 cinematografica, camera proxima atras do ombro do viajante. Boleto fisico e mao em movimento em primeiro plano; o pequeno leitor fica nitidamente a frente, a mao da funcionaria aponta para ELE (para o leitor, nao para o viajante). Ao fundo, plataforma ou onibus apenas sugeridos e desfocados. MOTIVO DA REJEICAO DA VERSAO ANTERIOR: a imagem entregue mostrava uma catraca/borboleta de validacao (torniquete), e isso esta na lista de 'evitar' do brief original ('catraca ou arquitetura que identifique um sistema especifico'). Alem disso o gesto da funcionaria apontava para o viajante, nao para a maquina. NESTA VERSAO: nao pode haver catraca, torniquete, roleta ou qualquer estrutura de barreira fisica — apenas um pequeno leitor/maquina de mao ou de bancada, como um validador portatil, sem arquitetura de metro. O gesto de apontar tem que ir claramente em direcao ao leitor. Evitar tambem: mapa de metro legivel, numero de linha, preco, marca, logotipo, texto no boleto, estetica espanhola, monumento, bandeira, sombrero, pose de fiscal."
+    },
+    {
+      "id": "b12",
+      "arquivo": "mexico-b12-taco-build-v2.png",
+      "titulo": "B12 — Two tacos, two different builds",
+      "cena": "BEAT: no balcao de uma taqueria real, dois tacos al pastor acabaram de ser montados no mesmo prato simples: um mostra cebola e coentro; o outro permanece visivelmente mais simples. Depois de ouvir 'La salsa aparte, por favor', a mao da pessoa que atende coloca um pequeno recipiente de salsa AO LADO dos tacos, sem despeja-la. A mao do viajante indica o ESPACO AO LADO do prato, confirmando que a modificacao foi compreendida. Foto 3:2 cinematografica, camera atras do ombro do viajante, prato com os dois tacos visivel mas nao dominando o quadro, luz natural quente, balcao vivido. MOTIVO DA REJEICAO DA VERSAO ANTERIOR: a versao entregue mostrava o dedo do viajante apontando DIRETAMENTE PARA A COMIDA (os tacos), quando o brief pede explicitamente o contrario ('a mao do viajante aponta discretamente para o espaco ao lado, nao para a comida'); alem disso o trompo de carne ao pastor em brasa aparecia em destaque no fundo e o prato preenchia o quadro como foto de comida publicitaria — o brief pede que 'a comida deve ser legivel como consequencia da conversa, nao como anuncio publicitario'. NESTA VERSAO: a mao do viajante deve apontar claramente para a mesa/espaco ao lado do prato, NUNCA tocando ou apontando para os tacos; o trompo/churrasqueira NAO pode aparecer em foco ou destaque no fundo; enquadre mais fechado nas duas maos (atendente pousando a salsa, viajante apontando o espaco) e menos no prato em si. Evitar tambem: salsa sendo despejada, dois tacos identicos, close gastronomico glamouroso, prato de restaurante formal, cardapio ou preco legivel, sombrero, bandeira, sorriso publicitario."
+    }
+  ]
+}

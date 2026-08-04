@@ -105,3 +105,30 @@ O Mac está processando agora, na ordem dos prefixos: italia → turquia → o r
 Escrever em `entregues/` · mudar o bloco de `estilo` de um curso já iniciado (quebra a
 consistência do conjunto, que é o valor dele) · renomear ids já entregues · tentar
 alcançar o Mac por qualquer meio que não seja um commit.
+
+## Nota adicional — 2026-08-04, pedido prioritário fora do banco
+
+Pedido novo, fora do ritmo normal do banco de destinos: `pedidos/6-mexico-regen.json`
+(e a versão legível `pedidos/6-mexico-regen.md`).
+
+**O que é:** correção de 2 imagens do acervo `mexico-en` (B09 e B12) que já tinham
+sido entregues antes, mas foram rejeitadas numa auditoria independente por
+violarem a própria lista "evitar" do brief que as gerou (B09 mostrava uma catraca
+que o brief mandava evitar; B12 tinha o dedo do viajante apontando para a comida
+em vez do espaço ao lado, e a comida virou protagonista glamourosa). O motivo
+completo da rejeição está dentro de cada `cena` do json/md — leia antes de gerar,
+para não repetir o mesmo erro.
+
+**Importante — não é o estilo do banco de destinos:** o `mexico-en` usa fotografia
+cinematográfica observacional (a mesma das outras 14 imagens já aprovadas do
+acervo), não a pintura digital dos bancos `destino-*`. O bloco de estilo está
+dentro do próprio `6-mexico-regen.md` — use esse, não o de `cenas-universais.json`.
+
+**Prioridade:** trate como prioritário — é o item que travou toda a produção do
+México. Depois de entregar as 2, siga o laço normal (bancos `destino-*` na ordem
+já existente).
+
+**O que NÃO fazer (além do já listado acima):** não regenere nenhuma das outras
+14 imagens do `mexico-en` sem um pedido novo explícito — só B09 e B12 estão
+liberadas nesta rodada. As outras 3 com ressalva (B02, B05, B11) ainda estão em
+decisão com o dono; não mexa nelas ainda.
