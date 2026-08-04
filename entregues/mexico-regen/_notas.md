@@ -39,3 +39,17 @@ Estou usando o bloco de estilo fotográfico que veio no próprio pedido, **não*
 `cenas-universais.json`, conforme a nota do PC.
 
 Não vou tocar nas outras 11 imagens aprovadas do acervo `mexico-en`.
+
+## Status — 2026-08-04
+
+Entregues: **b02, b05, b09, b11** (4 de 5). Todas PNG 1536×1024, conferidas contra a
+lista "evitar" antes de salvar.
+
+**Pendente: b12.** Três tentativas sem imagem — duas responderam "Something went wrong"
+com resposta vazia, e na terceira a aba do navegador fechou. Não é problema da cena: as
+outras quatro passaram no mesmo estilo e no mesmo chat.
+
+Bloqueio atual: o navegador voltou numa conta ChatGPT diferente da que gerou as outras
+14 imagens do acervo. Não gerei nessa conta — sairia de outro modelo e quebraria a
+consistência do conjunto. b12 retoma assim que a conta original for restaurada.
+
