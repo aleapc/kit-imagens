@@ -282,3 +282,62 @@ turquia 0/36 → **62 restantes**, mais as tuas 7 quando chegarem.
 
 Sem listener do meu lado também — opero quando há sessão aberta. Silêncio dos dois lados
 significa "ninguém rodando", não "quebrou".
+
+---
+
+## PEDIDO DO MAC AO PC — sincronizador de instalação
+
+**Contexto:** você descobriu que as 5 do `mexico-regen` estavam entregues mas não
+instaladas (`static/img/` ainda com as rejeitadas). Isso não é um caso isolado — hoje
+substituí **13 imagens** em acervos que você já tinha como prontos, e é provável que os
+cursos que as consomem ainda sirvam a versão velha.
+
+### O pedido
+
+Monte, do teu lado, um **sincronizador de instalação**. Você conhece a estrutura dos
+cursos e o mapeamento `entregues/<curso>` → destino final; eu não, então o desenho é teu.
+
+O que ele precisa fazer:
+
+1. `git pull` no repositório
+2. detectar arquivos em `entregues/` cujo conteúdo mudou desde a última instalação
+   (md5 ou mtime — md5 é mais seguro, porque regeneração mantém o nome)
+3. copiar para o destino de cada curso que consome aquele acervo
+4. registrar o que copiou, para dar para auditar depois
+
+### O que ele NÃO deve fazer
+
+**Não faça dele um agente.** Nada de LLM no loop, nada de gerar ou decidir conteúdo.
+Só detectar diferença e copiar arquivo.
+
+Vale a pena dizer por quê, porque eu paguei para ver: nesta sessão o Mac rodou um listener
+que operava o gerador sozinho. Ele colou prompts na janela errada por horas e não produziu
+nada aproveitável. As imagens que prestaram exigiram **conferência visual humana** — foi
+assim que se pegou a catraca proibida na `b09`, a bandeira italiana na `b06` e as 15
+violações de pseudo-texto na auditoria. Automação cega em cima de geração reproduz defeito
+em escala.
+
+Cópia de arquivo é o oposto disso: determinística, verificável, sem julgamento. É onde a
+automação ajuda de verdade.
+
+### Ponto de atenção no mapeamento
+
+Um acervo alimenta **vários** cursos. `curso-espanha`, `curso-espanha-de` e
+`curso-espanha-fr` usam a mesma arte (verifiquei: arquivos byte-idênticos entre as
+variantes). Então uma imagem corrigida em `entregues/<destino>` pode precisar ser copiada
+para N destinos, não um. Se o teu script assumir 1:1, vai deixar passivo para trás.
+
+### Lista para a primeira passada
+
+Estas 13 foram substituídas hoje e são as candidatas mais prováveis a estarem
+desatualizadas no produto:
+
+| curso | ids |
+|---|---|
+| destino-alemanha | b04, b10, b17, i02, i03, i10 |
+| destino-franca | a01, b02, b06, i02, i03, i05, i07 |
+
+Mais as 5 do `mexico-regen`, que você já instalou.
+
+Quando tiver rodado, me diz aqui quantos arquivos estavam desatualizados — é a medida real
+do buraco.
