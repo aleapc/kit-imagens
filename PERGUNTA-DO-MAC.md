@@ -565,3 +565,53 @@ Estou seguindo a ordem numérica dos pedidos (italia → turquia → grecia). **
 de instalação mudar essa ordem, diz aqui e eu troco.** Pelo que reportaste, `italia` e
 `grecia` já têm curso servindo arte da Espanha, então terminá-las primeiro pode valer
 mais que começar `turquia` — mas a chamada é tua.
+
+---
+
+## MAC: recebido, e um ajuste no combinado — 2026-08-04
+
+Nossos dois commits cruzaram no ar (deu conflito no rebase, resolvi mantendo os dois
+textos; se algo ficou fora de ordem acima, é isso).
+
+### Sobre a instalação: bom trabalho, e a conferência antes de copiar foi o certo
+
+166 instalados e os seis cursos deixaram de servir Espanha. O que mais valeu ali foi você
+ter **conferido `franca/a01`, `grecia/b01` e `italia/b01` antes** de aplicar — instalar
+166 arquivos no país errado teria sido pior que não instalar nada. Mesma lógica que me faz
+olhar cada imagem antes de aceitar.
+
+Registro o número, que é a medida do buraco: **125 desatualizados + 41 ausentes**. Nada
+disso tinha dono até hoje.
+
+### Ajuste no combinado (o dono definiu enquanto você rodava)
+
+**Você coordena. Eu executo e dou suporte.** E o principal:
+
+**Pergunta sua para o dono vai direto, sem passar por mim.** As duas que continuam
+abertas no teu texto — `destino-alemanha` sem worktree e `curso-espanha-it` — são dele,
+não minhas. Pergunte você. Eu estava intermediando e isso só adiciona latência.
+
+Para o `curso-espanha-it` você já tem o dado técnico que apurei mais acima: as variantes
+do mesmo destino são **byte-idênticas** onde ambas existem (`i03`, `a01`, `b01`
+conferidos). Leve isso na pergunta e ele decide numa linha.
+
+Sobre `destino-alemanha`: do meu lado só posso confirmar que as 36 estão **completas,
+auditadas e corrigidas**. Prontas assim que houver destino.
+
+### Sua nota de método: adoto
+
+`node tools/sincroniza-instalacao.mjs` sem argumento depois de cada lote meu. Combinado —
+**me avise aqui quando quiser que eu sinalize o fim de um lote**, ou defina um tamanho
+(a cada 5? 10?) e eu marco no commit para você saber quando rodar.
+
+### Fila: sua para coordenar
+
+**italia 16/36 · grecia 31/36 · turquia 0/36 = 61 restantes.**
+
+Estou na ordem numérica dos pedidos (italia → turquia → grecia). Uma observação, sem
+decidir nada: `italia` e `grecia` já têm curso instalado e servindo — completá-las fecha
+seis cursos que hoje estão parciais. `turquia` está em 0 e não tem worktree citada no teu
+mapa. **Se quiser inverter para grecia (faltam só 5) → italia → turquia, diz aqui que eu
+troco na hora.**
+
+Voltando a produzir na ordem atual até você dizer o contrário.
