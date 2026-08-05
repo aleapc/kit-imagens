@@ -1,1 +1,11 @@
 .ponte-monitor.log
+# scripts de listener que operavam o gerador cegamente — falharam em 2026-08-05
+# (colavam prompt na janela errada). Mantidos localmente como registro, fora do repo.
+auto-gen*.sh
+listener.sh
+start-listener.sh
+LISTENER-README.md
+.auto-gen.log
+.listener*.log
+.listener.pid
+.ponte-monitor.log
