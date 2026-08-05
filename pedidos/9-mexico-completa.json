@@ -1,0 +1,151 @@
+{
+  "curso": "mexico-completa",
+  "banco": "mexico-regen",
+  "ambiente": "México contemporâneo",
+  "_prioridade": "ALTA — e este pedido SUBSTITUI o 7-mexico-avancado.json, que pedia 7 imagens. O número estava errado e o erro foi meu.",
+  "_correcao": "Eu informei que curso-mexico-en tinha 29/36 de arte própria e que faltavam 7. Estava errado. Ao auditar a camada de imagem descobri que os 33 PNG que você entregou estavam instalados com o nome do PEDIDO (mexico-b01-pronunciation-v2.png) e o app pede outro caminho: +page.svelte monta src=\"{base}/img/{ep.id}.webp\" — sempre .webp, sempre o id do slot. Ou seja, a sua arte estava no disco e o app nunca a requisitava. Eu contei esses arquivos como cobertura e reportei um número inflado. Converti os 33 para <slot>.webp do meu lado, o que resolveu 14 slots. O que sobrou é o gap REAL: 21 slots ainda servindo foto da ESPANHA (conferido por md5 contra curso-espanha) mais a04, que nunca existiu.",
+  "_gap_real": "PRÓPRIAS: 14 (b01 b02 b03 b04 b05 b07 b09 b11 b12 b13 b14 b16 b17 i01). AINDA DA ESPANHA: 21. AUSENTE: a04.",
+  "estilo": "Fotografia observacional documental, luz natural, profundidade de campo rasa. Pessoas reais em situação real, nunca posadas para a câmera; ninguém olha para a lente. México contemporâneo — fachadas de cor sólida, fiação aérea, mobiliário urbano atual. Sem nenhum texto, letra, número ou logotipo legível em lugar nenhum do quadro. Onde a cena pediria superfície escrita, mostre-a de costas, fora de foco, ou substitua por objeto sem escrita.",
+  "_nota_estilo": "A regra de zero-texto deste banco é EXCEÇÃO ao CRITERIO-TEXTO.md e foi decisão do dono. Mantida.",
+  "_nota_formato": "IMPORTANTE, e é o que causou o problema: entregue como <slot>.png (a01.png, b06.png…), NÃO como mexico-<id>-<slug>.png. Eu converto para .webp na instalação. Nome de arquivo = id do slot, e mais nada.",
+  "entregar_em": "entregues/mexico-regen/",
+  "formato": {
+    "extensao": "png",
+    "dimensao": "1536x1024",
+    "nomenclatura": "<slot em minúsculas>.png"
+  },
+  "arquivos": [
+    {
+      "id": "a01",
+      "arquivo": "a01.png",
+      "titulo": "A01",
+      "cena": "Dois vizinhos conversando rápido na calçada de uma colônia, ambos gesticulando ao mesmo tempo, corpos inclinados um para o outro."
+    },
+    {
+      "id": "a02",
+      "arquivo": "a02.png",
+      "titulo": "A02",
+      "cena": "Roda de amigos numa mesa de fonda, todos rindo, um com a mão no ombro do outro no gesto de quem acabou de provocar."
+    },
+    {
+      "id": "a03",
+      "arquivo": "a03.png",
+      "titulo": "A03",
+      "cena": "Fachada de cor sólida numa rua de bairro, com a vida cotidiana em primeiro plano — gente passando, uma bicicleta encostada."
+    },
+    {
+      "id": "a04",
+      "arquivo": "a04.png",
+      "titulo": "A04",
+      "cena": "Um mural antigo numa parede de rua, fotografado de esguelha, com transeuntes desfocados em primeiro plano. Nada monumental."
+    },
+    {
+      "id": "a05",
+      "arquivo": "a05.png",
+      "titulo": "A05",
+      "cena": "Duas pessoas mais velhas sentadas num banco de praça, conversando, cabeças inclinadas uma para a outra."
+    },
+    {
+      "id": "a06",
+      "arquivo": "a06.png",
+      "titulo": "A06",
+      "cena": "Rua de bairro no fim da tarde, papel picado atravessando de um lado a outro, e ninguém posando."
+    },
+    {
+      "id": "a07",
+      "arquivo": "a07.png",
+      "titulo": "A07",
+      "cena": "Meia figura de alguém no meio de um gesto de mão claramente legível, num balcão, em conversa."
+    },
+    {
+      "id": "a08",
+      "arquivo": "a08.png",
+      "titulo": "A08",
+      "cena": "Alguém saindo por uma porta com a mala, virado para trás, no meio de um aceno para dentro do estabelecimento."
+    },
+    {
+      "id": "b06",
+      "arquivo": "b06.png",
+      "titulo": "B06",
+      "cena": "Saguão de chegada de aeroporto, alguém com o celular na mão e a mala ao lado, olhando para os balcões."
+    },
+    {
+      "id": "b08",
+      "arquivo": "b08.png",
+      "titulo": "B08",
+      "cena": "Uma esquina de rua onde alguém aponta uma direção para um estranho, e o estranho olha para onde a mão indica."
+    },
+    {
+      "id": "b10",
+      "arquivo": "b10.png",
+      "titulo": "B10",
+      "cena": "Uma porta com placa impressa, vista de frente, com alguém parado lendo de perto."
+    },
+    {
+      "id": "b15",
+      "arquivo": "b15.png",
+      "titulo": "B15",
+      "cena": "Interior de loja pequena, o vendedor estendendo uma peça para o cliente conferir o tamanho."
+    },
+    {
+      "id": "b18",
+      "arquivo": "b18.png",
+      "titulo": "B18",
+      "cena": "Recepção pequena de hotel de manhã, uma mala fechada junto ao balcão, duas pessoas em meio de despedida."
+    },
+    {
+      "id": "i02",
+      "arquivo": "i02.png",
+      "titulo": "I02",
+      "cena": "Balcão de fonda na hora do pico, visto de trás dos ombros de quem está no balcão."
+    },
+    {
+      "id": "i03",
+      "arquivo": "i03.png",
+      "titulo": "I03",
+      "cena": "Mesa com o cardápio fechado sobre o prato e um garçom inclinado, a mão no gesto de quem recomenda."
+    },
+    {
+      "id": "i04",
+      "arquivo": "i04.png",
+      "titulo": "I04",
+      "cena": "Mesa de fim de tarde com copos e um prato de coisas pequenas; ao fundo, uma praça enchendo."
+    },
+    {
+      "id": "i05",
+      "arquivo": "i05.png",
+      "titulo": "I05",
+      "cena": "Duas pessoas conversando de pé numa esquina, uma delas claramente de fora, a outra gesticulando uma explicação."
+    },
+    {
+      "id": "i06",
+      "arquivo": "i06.png",
+      "titulo": "I06",
+      "cena": "Um caderninho aberto sobre a mesa de um café, com um mapa amassado e um bilhete usado ao lado."
+    },
+    {
+      "id": "i07",
+      "arquivo": "i07.png",
+      "titulo": "I07",
+      "cena": "Cozinha de fonda vista pela passagem, alguém de avental parado no vão, olhando para o salão."
+    },
+    {
+      "id": "i08",
+      "arquivo": "i08.png",
+      "titulo": "I08",
+      "cena": "Mesa comprida de almoço de domingo em casa, vista de uma ponta, cadeiras desalinhadas, ninguém posando."
+    },
+    {
+      "id": "i09",
+      "arquivo": "i09.png",
+      "titulo": "I09",
+      "cena": "Mercado de rua de manhã, o feirante estendendo a mão para pegar algo — a mão dele, não a do cliente."
+    },
+    {
+      "id": "i10",
+      "arquivo": "i10.png",
+      "titulo": "I10",
+      "cena": "Um balcão com a maquininha de cartão estendida na direção da câmera, e uma carteira aberta desfocada em primeiro plano."
+    }
+  ]
+}

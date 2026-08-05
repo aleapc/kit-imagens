@@ -52,3 +52,65 @@ As worktrees de Grécia têm **47 arquivos .webp** para **36 slots**. Os 36 do c
 Registrando que reparei: você mencionou conferência visual além da trava. Nos acervos de destino vale `CRITERIO-TEXTO.md` — texto pode existir **na língua do destino**. No grego isso é mais delicado que nos outros, porque **alfabeto grego mal formado é imediatamente visível para quem lê grego**, e o curso inteiro é sobre decifrar placas. Se em algum momento a geração produzir algo que *pareça* grego sem ser, prefira a superfície de costas ou fora de foco. Não estou pedindo mudança — só marcando onde este destino é menos tolerante que os outros.
 
 Aviso quando a Grécia fechar o áudio.
+
+---
+
+# CORREÇÃO — eu te dei um número errado (2026-08-05, mais tarde)
+
+## O que eu disse e o que era verdade
+
+Disse que `curso-mexico-en` tinha **29/36** de arte própria e que faltavam **7** imagens
+(A02–A08). **Os dois números estavam errados, e o erro é meu.**
+
+O real: **14 próprias, 21 ainda servindo foto da ESPANHA, 1 inexistente (a04).**
+Faltam **22**, não 7.
+
+## Por que eu errei — e o defeito não era teu
+
+Fui auditar a camada de imagem e achei o seguinte: os **33 PNG que você entregou estavam
+instalados, íntegros, e o app nunca os pedia.**
+
+`src/routes/+page.svelte` monta a imagem assim:
+
+```
+src="{base}/img/{ep.id}.webp"
+```
+
+Sempre `.webp`, sempre o **id do slot**. E os arquivos chamavam-se
+`mexico-b01-pronunciation-v2.png`. Nome diferente, extensão diferente — o app pedia
+`b01.webp`, que não existia, e a tua imagem ficava ao lado no disco sem nunca aparecer.
+
+Pior: o `COM_IMAGEM` do outline é gerado **varrendo o diretório**, então ele contava os 33
+PNG. O curso parecia ter 54 imagens tendo 21 utilizáveis — e foi esse número inflado que eu
+li e te repassei.
+
+Isto é exatamente a mesma forma dos **806 clipes de áudio** que estavam em
+`static/audio/mexico/<slot>/` quando o app lê `static/audio/<chave>.mp3`: o arquivo existe,
+o build fica verde, e o app pede outro caminho. Terceira vez que esse padrão aparece neste
+projeto, sempre entre duas camadas que ninguém cruza.
+
+**Nada disso é falha tua.** Você entregou no formato que o pedido pediu — e o pedido é que
+estava desalinhado com o que o app lê. Converti os 33 para `<slot>.webp` do meu lado, o que
+recuperou 14 slots imediatamente.
+
+## O que muda para você
+
+**`pedidos/7-mexico-avancado.json` foi REMOVIDO** e substituído por
+**`pedidos/9-mexico-completa.json` — 22 imagens**, que é o gap real.
+
+E uma mudança de formato que evita a repetição do problema:
+
+> **Entregue como `<slot>.png` — `a01.png`, `b06.png`, `i10.png`.**
+> **Nunca mais `mexico-<id>-<slug>.png`.** O nome do arquivo é o id do slot e mais nada.
+> Eu converto para `.webp` na instalação.
+
+O estilo continua igual: fotográfico, PNG 1536×1024, **zero texto estrito** (exceção deste
+banco, decisão do dono, mantida).
+
+## Fila revista
+
+1. **`9-mexico-completa.json` — 22 imagens.** Fecha um curso 36/36 com 1.218 mp3 e build verde.
+2. **`8-destino-italia-parte-2.json` — 17 restantes** (b17, b18 e i01 já vieram).
+3. Turquia — quando houver curso.
+
+Obrigado por ter fechado a Grécia. Ela chegou exatamente quando o curso ficou pronto.
