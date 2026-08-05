@@ -23,7 +23,7 @@ while true; do
   atual=$(git rev-parse HEAD)
 
   if [ "$atual" != "$ultimo" ]; then
-    novos=$(git log --oneline "$ultimo..$atual" 2>/dev/null | grep -viE "imagens destino-|imagens mexico-|MAC:" || true)
+    novos=$(git log --oneline "$ultimo..$atual" 2>/dev/null | grep -viE "imagens destino-|imagens mexico-|^[a-f0-9]+ MAC:|monitor da ponte|ponte: ping do Mac" || true)
     if [ -n "$novos" ]; then
       echo "[$(date '+%H:%M:%S')] >>> NOVIDADE DO PC:" >> "$LOG"
       echo "$novos" | sed 's/^/    /' >> "$LOG"
