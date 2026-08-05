@@ -1,12 +1,19 @@
 # Banco de imagens — destino-turquia
 
-**36 imagens.** Ambiente: Türkiye (Istambul, Capadócia, Antália): café com copo-tulipa de chá, grande bazar coberto, balsa no Bósforo, praça com mesquita ao fundo, barraca de comida de rua.
+**36 imagens.** Ambiente: Türkiye (Istambul, Capadócia, Antália): café com copo-tulipa de chá, grande bazar coberto, balsa no Bósforo, praça com mesquita ao fundo, barraca de comida de rua
 
-BANCO ANTECIPADO: cenas universais das 36 situações, instanciadas neste destino. Entregar em `entregues/destino-turquia/`, id exato `.webp`, 1200×800, sem texto.
+Entregar em `entregues/destino-turquia/`, id exato `.webp`, 1200×800.
+
+> **Por que este pedido existe.** O curso deste destino está hoje servindo arte de OUTRO
+> destino — arquivos byte a byte idênticos aos da Espanha, herdados quando o SKU nasceu
+> por cópia. O app monta `img/<slot>.webp`, o arquivo existe, a página renderiza e o
+> build fica verde, então isso passou calado em seis SKUs antes de haver um portão para
+> pegá-lo. As cenas abaixo são as mesmas 36 de sempre; o que muda, e o que importa, é o
+> AMBIENTE em que cada uma é instanciada.
 
 ## Bloco de estilo — cole ANTES de cada prompt
 
-> Pintura digital cinematográfica, luz de fim de tarde (golden hour), cores quentes e saturadas, atmosfera acolhedora e convidativa, estilo das ilustrações de viagem. Sem nenhum texto, letra, número ou logotipo na imagem. Enquadramento horizontal 3:2 (1200×800), profundidade de campo suave, composição com um ponto focal claro. Pessoas de costas, de perfil ou a média distância — nenhum rosto reconhecível em primeiro plano. Ambiente: Türkiye (Istambul, Capadócia, Antália): café com copo-tulipa de chá, grande bazar coberto, balsa no Bósforo, praça com mesquita ao fundo, barraca de comida de rua.
+> Pintura digital cinematográfica, luz de fim de tarde (golden hour), cores quentes e saturadas, atmosfera acolhedora e convidativa, estilo das ilustrações de viagem. Enquadramento horizontal 3:2 (1200×800), profundidade de campo suave, composição com um ponto focal claro. Pessoas de costas, de perfil ou a média distância — nenhum rosto reconhecível em primeiro plano. TEXTO: só pode aparecer texto que este pedido DITAR explicitamente, e sempre em turco. NÃO invente placa, letreiro, cardápio, crachá, rótulo, painel de horários nem recibo — é justamente o texto não ditado que sai como pseudo-escrita, e foi o que a auditoria de zero-texto encontrou em 15 imagens de Alemanha e França. Onde a cena pede uma superfície escrita e o pedido não dita as palavras, deixe-a ilegível: fora de foco, em ângulo, cortada pela borda ou encoberta. Nenhuma bandeira e nenhum brasão, em nenhuma hipótese. Ambiente: Türkiye (Istambul, Capadócia, Antália): café com copo-tulipa de chá, grande bazar coberto, balsa no Bósforo, praça com mesquita ao fundo, barraca de comida de rua
 
 ## As imagens
 
@@ -189,4 +196,3 @@ Junto à porta, o anfitrião pousa a mão nas costas do viajante num gesto ao me
 **A08**
 
 Numa esquina ao fim da tarde, o viajante e um local se despedem com um abraço breve e caloroso, a mala pousada ao lado. A luz dourada por trás; a viagem fecha não num aeroporto, mas num até-a-próxima entre duas pessoas.
-

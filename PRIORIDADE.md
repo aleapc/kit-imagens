@@ -39,14 +39,22 @@ irmão EN, então recebem a mesma arte por sincronização assim que o EN fechar
 
 O critério é quanto turista o corredor vale e quão perto o curso está de publicar.
 
+> **Atenção, coordenação:** o Mac deu ACK no pedido 9 às 13h55 e começou a produzi-lo;
+> eu apaguei o 9 às 15h30 sem ver o ACK. O conteúdo é o mesmo do 12 — mudaram só o número
+> e a extensão (`.png` → `.webp`). Nada do que ele gerou se perde. Ver `RESPOSTA-DO-PC.md`.
+
+> **Critério de texto:** os quatro pedidos foram reescritos com a regra de 2026-08-04.
+> Texto **pode** aparecer, na língua do destino, **desde que ditado no pedido** — o que o
+> gerador erra é o texto que inventa sozinho. Ver `CRITERIO-TEXTO.md`.
+
 1. **`3-destino-turquia`** — 36 imagens. A pasta `entregues/destino-turquia/`
    existe e está VAZIA, então o pedido nunca foi executado. É o curso mais
    urgente: o conteúdo fechou hoje (36/36 partes, 1.431 áudios, portões verdes) e
    a arte é a única camada que falta. Türkiye recebe 60,5 M de turistas.
 2. **`12-destino-mexico`** — 22 imagens. EUA→México é 14,1 M, o maior corredor
    comprador pago do mapa, e o curso está pronto para publicar fora isto.
-   *Substitui o pedido 9, que listava os mesmos slots com convenção de nome
-   antiga.*
+   *Substitui o pedido 9 — mesmos slots, extensão `.webp` em vez de `.png`. O Mac já
+   começou o 9: o trabalho dele aproveita inteiro.*
 3. **`11-destino-italia`** — 16 imagens. Fecha os dois SKUs de Itália de uma vez
    (EN e DE), e Alemanha→Itália é o maior corredor individual europeu, 14,1 M.
    *Substitui o pedido 8.*
