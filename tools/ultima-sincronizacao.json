@@ -1,104 +1,13 @@
 {
-  "quando": "2026-08-04T23:25:34.382Z",
-  "modo": "aplicar",
+  "quando": "2026-08-05T12:28:34.963Z",
+  "modo": "dry-run",
   "resumo": {
-    "iguais": 408,
+    "iguais": 423,
     "desatualizados": 0,
-    "ausentes": 15,
-    "copiados": 15
+    "ausentes": 0,
+    "copiados": 0
   },
-  "itens": [
-    {
-      "acervo": "curso-espanha-de",
-      "curso": "curso-espanha",
-      "arquivo": "a04.webp",
-      "estado": "AUSENTE"
-    },
-    {
-      "acervo": "curso-espanha-de",
-      "curso": "curso-espanha",
-      "arquivo": "b01.webp",
-      "estado": "AUSENTE"
-    },
-    {
-      "acervo": "curso-espanha-de",
-      "curso": "curso-espanha",
-      "arquivo": "b02.webp",
-      "estado": "AUSENTE"
-    },
-    {
-      "acervo": "curso-espanha-de",
-      "curso": "curso-espanha",
-      "arquivo": "b03.webp",
-      "estado": "AUSENTE"
-    },
-    {
-      "acervo": "curso-espanha-de",
-      "curso": "curso-espanha",
-      "arquivo": "b04.webp",
-      "estado": "AUSENTE"
-    },
-    {
-      "acervo": "curso-espanha-de",
-      "curso": "curso-espanha",
-      "arquivo": "b05.webp",
-      "estado": "AUSENTE"
-    },
-    {
-      "acervo": "curso-espanha-de",
-      "curso": "curso-espanha",
-      "arquivo": "b07.webp",
-      "estado": "AUSENTE"
-    },
-    {
-      "acervo": "curso-espanha-de",
-      "curso": "curso-espanha",
-      "arquivo": "b09.webp",
-      "estado": "AUSENTE"
-    },
-    {
-      "acervo": "curso-espanha-de",
-      "curso": "curso-espanha",
-      "arquivo": "b11.webp",
-      "estado": "AUSENTE"
-    },
-    {
-      "acervo": "curso-espanha-de",
-      "curso": "curso-espanha",
-      "arquivo": "b12.webp",
-      "estado": "AUSENTE"
-    },
-    {
-      "acervo": "curso-espanha-de",
-      "curso": "curso-espanha",
-      "arquivo": "b13.webp",
-      "estado": "AUSENTE"
-    },
-    {
-      "acervo": "curso-espanha-de",
-      "curso": "curso-espanha",
-      "arquivo": "b14.webp",
-      "estado": "AUSENTE"
-    },
-    {
-      "acervo": "curso-espanha-de",
-      "curso": "curso-espanha",
-      "arquivo": "b16.webp",
-      "estado": "AUSENTE"
-    },
-    {
-      "acervo": "curso-espanha-de",
-      "curso": "curso-espanha",
-      "arquivo": "b17.webp",
-      "estado": "AUSENTE"
-    },
-    {
-      "acervo": "curso-espanha-de",
-      "curso": "curso-espanha",
-      "arquivo": "i01.webp",
-      "estado": "AUSENTE"
-    }
-  ],
+  "itens": [],
   "naoMapeados": [],
   "destinosAusentes": []
 }

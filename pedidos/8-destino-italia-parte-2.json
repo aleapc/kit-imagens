@@ -1,0 +1,178 @@
+{
+  "curso": "destino-italia-parte-2",
+  "banco": "destino-italia",
+  "ambiente": "Itália contemporânea",
+  "_prioridade": "ALTA — e a fila mudou desde o último pedido. Quando destino-italia foi enfileirado atrás da Grécia, nenhum curso de Itália existia. Em 2026-08-05 fecharam DOIS: curso-italia-en e curso-italia-de, 36/36 partes cada, com áudio gravado e build verde. DE→Itália é o maior corredor individual da Europa (14,1 M de chegadas/ano). Os dois estão prontos para publicar e hoje mostram FOTO DA ESPANHA em 17 slots e nada em 3.",
+  "_reuso": "Arte é ativo de DESTINO, igual ao áudio nativo: estas 20 imagens servem curso-italia-en E curso-italia-de sem nenhuma variação. Uma entrega, dois cursos. O mapa em tools/sincroniza-instalacao.mjs já instala destino-italia nos dois worktrees.",
+  "_gap": "b01–b16 já entregues e instalados (16). AUSENTES: A04, B17, I01. AINDA COM ARTE ESPANHOLA: A01 A02 A03 A05 A06 A07 A08 B18 I02 I03 I04 I05 I06 I07 I08 I09 I10.",
+  "estilo": "Pintura digital cinematográfica, luz de fim de tarde (golden hour), cores quentes e saturadas, atmosfera acolhedora e convidativa, estilo das ilustrações de viagem. Enquadramento horizontal 3:2 (1200×800), profundidade de campo suave, composição centrada e legível em miniatura. Itália contemporânea: fachadas de reboco, persianas de metal, mobiliário urbano atual — nunca cenário de época. Pessoas em situação real, jamais posando para a câmera, ninguém olha para a lente.",
+  "_nota_texto": "Vale o critério revisado em CRITERIO-TEXTO.md: texto PODE aparecer, desde que esteja em ITALIANO e correto. Uma placa em espanhol dentro deste banco é defeito. Se não houver certeza da grafia italiana, prefira a superfície de costas, fora de foco, ou sem escrita — errar a língua é pior que não ter texto.",
+  "entregar_em": "entregues/destino-italia/",
+  "formato": {
+    "extensao": "webp",
+    "dimensao": "1200x800",
+    "nomenclatura": "<slot em minúsculas>.webp"
+  },
+  "arquivos": [
+    {
+      "id": "b17",
+      "arquivo": "b17.webp",
+      "titulo": "B17",
+      "parte": "Pharmacy, pain, emergency",
+      "cena": "Domingo à noite, vitrine escura de farmácia com a cruz apagada. Colado por dentro do vidro, um papel impresso; do lado de fora, a silhueta de alguém lendo-o de perto, iluminada só pelo poste da rua e pelo reflexo da vitrine.",
+      "_cena_do_episodio": "It is Sunday evening, the pharmacy in front of you is shut, and there is a printed sheet taped inside the glass."
+    },
+    {
+      "id": "b18",
+      "arquivo": "b18.webp",
+      "titulo": "B18",
+      "parte": "The last day — check out, leave the bag, and say the thing that makes you welcome back",
+      "cena": "Saguão pequeno de hotel de manhã. Uma mala de pé junto ao balcão, já fechada; do outro lado do balcão, duas pessoas em meio de conversa — não uma transação, uma despedida. Luz entrando pela porta da rua.",
+      "_cena_do_episodio": "The room is empty, the flight is at nine tonight, and the person at the desk has been the same face all week."
+    },
+    {
+      "id": "i01",
+      "arquivo": "i01.webp",
+      "titulo": "I01",
+      "parte": "Their clock, and why eating early costs you the good table",
+      "cena": "Rua estreita às seis e quinze da tarde. Um restaurante com as luzes acesas e as mesas vazias em primeiro plano; ao fundo, a rua ainda cheia de gente andando, sem pressa de jantar. O contraste entre o salão vazio e a calçada movimentada é o assunto.",
+      "_cena_do_episodio": "It is quarter past six, you are hungry, and the only place with the lights on has a menu in four languages outside."
+    },
+    {
+      "id": "i02",
+      "arquivo": "i02.webp",
+      "titulo": "I02",
+      "parte": "The order of operations at the counter",
+      "cena": "Balcão de bar italiano na hora do pico, visto de trás dos ombros de quem está no balcão. Cotovelos encostados, xícaras pequenas, o barista no meio de um movimento. Sem fila organizada — a bagunça ordenada é o assunto.",
+      "_cena_do_episodio": "Three people who arrived after you have already been served, and you are still standing back waiting to be noticed."
+    },
+    {
+      "id": "i03",
+      "arquivo": "i03.webp",
+      "titulo": "I03",
+      "parte": "The dish you were never going to order",
+      "cena": "Mesa de trattoria com a carta fechada em cima do prato e um garçom inclinado, falando, com a mão fazendo o gesto de quem está recomendando. O foco é o gesto dele, não a comida.",
+      "_cena_do_episodio": "The menu has forty items, you recognise six, and you are about to order the sixth one for the fourth night running."
+    },
+    {
+      "id": "i04",
+      "arquivo": "i04.webp",
+      "titulo": "I04",
+      "parte": "The evening: aperitivo, the round, and how to leave a table",
+      "cena": "Mesa de aperitivo no fim da tarde, com um copo alto de laranja e um prato de coisas pequenas ao lado. Ao fundo, uma praça enchendo. A luz é o fim do dourado, quase azul.",
+      "_cena_do_episodio": "A glass has arrived with a plate of things next to it and you cannot tell whether this is a snack or the meal."
+    },
+    {
+      "id": "i05",
+      "arquivo": "i05.webp",
+      "titulo": "I05",
+      "parte": "The five questions everyone asks you",
+      "cena": "Duas pessoas conversando de pé numa esquina, uma delas claramente de fora — mochila, mapa dobrado na mão — e a outra gesticulando uma explicação. A conversa está no meio, não no começo nem no fim.",
+      "_cena_do_episodio": "A stranger has decided to talk to you, the first question landed, and you are three seconds from the polite nod that ends it."
+    },
+    {
+      "id": "i06",
+      "arquivo": "i06.webp",
+      "titulo": "I06",
+      "parte": "Telling them about yesterday",
+      "cena": "Um caderninho aberto sobre uma mesa de café, com um mapa amassado e um bilhete de trem usado ao lado. Uma mão apoiada, imóvel. É a imagem de quem está contando o dia de ontem, não de quem planeja o de amanhã.",
+      "_cena_do_episodio": "Someone has asked what you did yesterday and every sentence you own is stuck in the present."
+    },
+    {
+      "id": "i07",
+      "arquivo": "i07.webp",
+      "titulo": "I07",
+      "parte": "Praise that reaches the kitchen, and the sentence that gets it fixed",
+      "cena": "Cozinha de trattoria vista pela passagem, com uma pessoa de avental parada no vão, olhando para o salão. Em primeiro plano e desfocado, o encosto de uma cadeira. O momento é o cozinheiro saindo para receber um elogio.",
+      "_cena_do_episodio": "The dish was genuinely wonderful, the one before it was cold, and you have about ten seconds to do something useful with either fact."
+    },
+    {
+      "id": "i08",
+      "arquivo": "i08.webp",
+      "titulo": "I08",
+      "parte": "Being invited into someone's home",
+      "cena": "Mesa comprida de almoço de domingo em casa, vista de uma ponta, com pratos em vários estágios e cadeiras desalinhadas. Uma cadeira vazia com um casaco no encosto. Ninguém posando.",
+      "_cena_do_episodio": "Someone you met three days ago has invited you to lunch on Sunday and you have no idea what any part of that means."
+    },
+    {
+      "id": "i09",
+      "arquivo": "i09.webp",
+      "titulo": "I09",
+      "parte": "Spending the afternoon the way they spend it",
+      "cena": "Mercado de rua de manhã, a barraca vista do lado de fora, com o feirante estendendo a mão para pegar algo — a mão dele, não a do cliente, é a que toca a mercadoria.",
+      "_cena_do_episodio": "It is four in the afternoon, the museums are full, and the town looks asleep in a way that feels like there is nothing to do."
+    },
+    {
+      "id": "i10",
+      "arquivo": "i10.webp",
+      "titulo": "I10",
+      "parte": "Money here: the card they must take, the tip nobody expects",
+      "cena": "Um balcão com a maquininha de cartão estendida na direção da câmera pela mão do comerciante, e uma carteira aberta em primeiro plano desfocado. Nenhum drama — é uma transação normal.",
+      "_cena_do_episodio": "The machine is 'not working', you have twelve euros in cash, and you are trying to decide whether this is a problem or a negotiation."
+    },
+    {
+      "id": "a01",
+      "arquivo": "a01.webp",
+      "titulo": "A01",
+      "parte": "How they talk when it isn't to you",
+      "cena": "Duas pessoas conversando rápido na calçada, ambas gesticulando ao mesmo tempo, corpos inclinados uma para a outra. Ninguém de fora no quadro. A energia é de acordo, não de briga.",
+      "_cena_do_episodio": "Two people beside you are having an entire conversation and you cannot find a single word boundary in it."
+    },
+    {
+      "id": "a02",
+      "arquivo": "a02.webp",
+      "titulo": "A02",
+      "parte": "What they laugh at, and the one joke you can safely make",
+      "cena": "Roda de amigos numa mesa, todos rindo, um deles com a mão no ombro do outro no gesto de quem acabou de provocar. O provocado está rindo também.",
+      "_cena_do_episodio": "Everyone at the table is laughing at something one of them said about another one, and you cannot tell whether it was cruel."
+    },
+    {
+      "id": "a03",
+      "arquivo": "a03.webp",
+      "titulo": "A03",
+      "parte": "Who they think they are",
+      "cena": "Torre de sino de uma cidade pequena vista do fim de uma rua, com a vida cotidiana em primeiro plano — pessoas passando, uma bicicleta encostada. A torre domina o enquadramento sem ser monumento turístico.",
+      "_cena_do_episodio": "You said you loved Italy and the person you said it to asked which part, in a tone that made clear the answer mattered."
+    },
+    {
+      "id": "a04",
+      "arquivo": "a04.webp",
+      "titulo": "A04",
+      "parte": "The old argument",
+      "cena": "Um trem regional partindo de uma estação pequena, visto da plataforma, com uma pessoa ainda acenando. A imagem é sobre partir, não sobre viajar.",
+      "_cena_do_episodio": "Someone has just told you, with feeling, how different the other half of their country is — and paused, as if your view were next."
+    },
+    {
+      "id": "a05",
+      "arquivo": "a05.webp",
+      "titulo": "A05",
+      "parte": "The other language",
+      "cena": "Duas pessoas mais velhas sentadas num banco de praça, conversando, cabeças inclinadas uma para a outra. Ao fundo e desfocado, alguém de fora que claramente não está acompanhando a conversa.",
+      "_cena_do_episodio": "The two people serving you switched to something that is clearly not the Italian you have been learning, and it happened the moment they stopped talking to you."
+    },
+    {
+      "id": "a06",
+      "arquivo": "a06.webp",
+      "titulo": "A06",
+      "parte": "Their calendar",
+      "cena": "Rua de cidade pequena em pleno agosto, persianas de metal baixadas em quase todas as lojas, luz forte de meio-dia, quase ninguém. Uma bicicleta encostada numa porta fechada.",
+      "_cena_do_episodio": "It is the middle of August, the street you liked is entirely shuttered, and a handwritten sign says something about the twenty-second."
+    },
+    {
+      "id": "a07",
+      "arquivo": "a07.webp",
+      "titulo": "A07",
+      "parte": "Signals: welcome, mild irritation, and time to go",
+      "cena": "Meia figura de alguém no meio de um gesto italiano de mão claramente legível, num balcão, em conversa. O gesto é o assunto do quadro.",
+      "_cena_do_episodio": "They said yes to everything and nothing has happened, and you cannot work out whether you were refused three days ago."
+    },
+    {
+      "id": "a08",
+      "arquivo": "a08.webp",
+      "titulo": "A08",
+      "parte": "The goodbye that gets you invited back",
+      "cena": "Alguém saindo por uma porta de vidro com a mala, virado para trás, no meio de um aceno para dentro do estabelecimento. Vê-se pela porta a pessoa do balcão acenando de volta.",
+      "_cena_do_episodio": "It is the last morning, the same four faces are where they have been all week, and you have about a minute with each of them."
+    }
+  ]
+}
