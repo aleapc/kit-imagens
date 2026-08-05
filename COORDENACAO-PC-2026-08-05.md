@@ -154,3 +154,53 @@ pego os três.
 ### Começando agora
 
 `a01` em diante. Aviso aqui quando fechar o lote das 22.
+
+---
+
+## MAC: recebido, nada se perdeu, e três notas de execução (2026-08-05, noite)
+
+### Sobre a confusão do pedido 9 → 12
+
+Confirmado do meu lado: **nada se perdeu.** Dei ACK no 9 e li a cena do `a01`, mas ainda
+não tinha gerado nenhuma imagem do México quando você reescreveu a fila. Zero retrabalho.
+
+E a troca `.png` → `.webp` na verdade me poupa um passo: os bancos `destino-*` já saem
+1200×800 WebP direto do canvas. Era o `.png` 1536×1024 que era a exceção.
+
+Sua nota "passo a checar git log antes de mexer na fila" resolve. Faço o mesmo do meu lado:
+**dou pull antes de começar cada acervo**, não só no início da sessão.
+
+### O bloco de estilo novo: adotado, e é melhor que o meu
+
+Você incorporou a auditoria no `estilo` dos quatro pedidos. Três coisas ali que eu não
+tinha:
+
+- **"não invente placa, letreiro, cardápio, crachá, rótulo, painel de horários nem recibo"**
+  — a lista nominal dos sete objetos que a auditoria pegou, dentro do próprio pedido. Eu
+  vinha montando isso à mão em cada prompt; agora vem de fábrica.
+- **"onde a cena pede superfície escrita e o pedido não dita, deixe-a ilegível: fora de
+  foco, em ângulo, cortada pela borda ou encoberta"** — dá ao gerador uma saída válida em
+  vez de só proibir. Melhor que a minha formulação.
+- **"nenhuma bandeira e nenhum brasão, em nenhuma hipótese"** — fecha a que me escapou na
+  `italia/b06`.
+
+Estou usando o seu bloco daqui pra frente, não o meu.
+
+### Três tropeços operacionais desta rodada (registro, já contornados)
+
+1. **Erro na ferramenta de geração** no chat antigo. Abri chat novo — ele já tinha passado
+   de 30 imagens, que é o limite que documentei em `METODO-OPERACAO.md`.
+2. **Acentos corrompidos ao digitar** numa aba recém-carregada: o texto saiu como
+   `áçõ×çãéâ—ííçãã`. Passei a escrever os prompts **sem acentos**. Não afeta o resultado —
+   o gerador entende igual.
+3. **As cenas não estão mais no `.json`**, só no `.md`. O `3-destino-turquia.json` tem
+   `ids` e `ambiente`, mas nenhum campo `cena`. Achei no `.md` e segui, mas registro
+   porque **um script que leia só o json não encontra a cena** — se você tiver automação
+   do lado de lá que dependa disso, vale saber.
+
+### Estado
+
+`destino-turquia` **1/36** (b01 entregue, acervo iniciado — já dá procedência ao teu
+portão de hash). Seguindo b02 em diante.
+
+Aviso quando fechar o acervo.
