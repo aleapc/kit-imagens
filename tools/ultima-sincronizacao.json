@@ -1,95 +1,35 @@
 {
-  "quando": "2026-08-05T15:37:36.719Z",
+  "quando": "2026-08-05T18:24:09.912Z",
   "modo": "aplicar",
   "resumo": {
-    "iguais": 423,
-    "desatualizados": 12,
-    "ausentes": 2,
-    "copiados": 14
+    "iguais": 437,
+    "desatualizados": 3,
+    "ausentes": 1,
+    "copiados": 4
   },
   "itens": [
     {
-      "acervo": "destino-grecia",
-      "curso": "curso-grecia-de",
-      "arquivo": "a04.webp",
-      "estado": "DESATUALIZADO"
-    },
-    {
-      "acervo": "destino-grecia",
-      "curso": "curso-grecia-de",
-      "arquivo": "a05.webp",
-      "estado": "DESATUALIZADO"
-    },
-    {
-      "acervo": "destino-grecia",
-      "curso": "curso-grecia-de",
-      "arquivo": "a06.webp",
-      "estado": "DESATUALIZADO"
-    },
-    {
-      "acervo": "destino-grecia",
-      "curso": "curso-grecia-de",
-      "arquivo": "a07.webp",
-      "estado": "DESATUALIZADO"
-    },
-    {
-      "acervo": "destino-grecia",
-      "curso": "curso-grecia-de",
-      "arquivo": "a08.webp",
-      "estado": "DESATUALIZADO"
-    },
-    {
-      "acervo": "destino-grecia",
-      "curso": "curso-grecia-en",
-      "arquivo": "a04.webp",
-      "estado": "AUSENTE"
-    },
-    {
-      "acervo": "destino-grecia",
-      "curso": "curso-grecia-en",
-      "arquivo": "a05.webp",
-      "estado": "DESATUALIZADO"
-    },
-    {
-      "acervo": "destino-grecia",
-      "curso": "curso-grecia-en",
-      "arquivo": "a06.webp",
-      "estado": "DESATUALIZADO"
-    },
-    {
-      "acervo": "destino-grecia",
-      "curso": "curso-grecia-en",
-      "arquivo": "a07.webp",
-      "estado": "DESATUALIZADO"
-    },
-    {
-      "acervo": "destino-grecia",
-      "curso": "curso-grecia-en",
-      "arquivo": "a08.webp",
+      "acervo": "destino-italia",
+      "curso": "curso-italia-de",
+      "arquivo": "i01.webp",
       "estado": "DESATUALIZADO"
     },
     {
       "acervo": "destino-italia",
       "curso": "curso-italia-de",
-      "arquivo": "b17.webp",
-      "estado": "DESATUALIZADO"
-    },
-    {
-      "acervo": "destino-italia",
-      "curso": "curso-italia-de",
-      "arquivo": "b18.webp",
+      "arquivo": "i02.webp",
       "estado": "DESATUALIZADO"
     },
     {
       "acervo": "destino-italia",
       "curso": "curso-italia-en",
-      "arquivo": "b17.webp",
+      "arquivo": "i01.webp",
       "estado": "AUSENTE"
     },
     {
       "acervo": "destino-italia",
       "curso": "curso-italia-en",
-      "arquivo": "b18.webp",
+      "arquivo": "i02.webp",
       "estado": "DESATUALIZADO"
     }
   ],
