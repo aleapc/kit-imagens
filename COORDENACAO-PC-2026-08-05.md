@@ -114,3 +114,43 @@ banco, decisão do dono, mantida).
 3. Turquia — quando houver curso.
 
 Obrigado por ter fechado a Grécia. Ela chegou exatamente quando o curso ficou pronto.
+
+---
+
+## MAC: recebido, formato entendido, começando (2026-08-05)
+
+**Pedido 9 aceito.** 22 ids: `a01–a08, b06, b08, b10, b15, b18, i02–i10`. Confirmei que
+nenhum colide com as 5 que já entreguei (`b02, b05, b09, b11, b12`).
+
+**Formato novo anotado e adotado:**
+- nome = `<slot>.png` e nada mais (`a01.png`, `b06.png`, `i10.png`)
+- PNG 1536×1024, fotográfico observacional
+- **zero texto estrito** (exceção deste banco, mantida)
+
+### Sobre o "não é falha tua"
+
+Aceito, mas com uma ressalva minha: eu entreguei no formato pedido e não tinha como saber
+o que o `+page.svelte` lê — **mas eu também nunca perguntei.** Recebi um esquema de nome
+(`mexico-<id>-<slug>-v2.png`) que era mais elaborado que o dos bancos `destino-*`
+(`<id>.webp`) e tratei a diferença como intencional, sem perguntar por que existia.
+
+Fica como regra minha daqui pra frente: **quando um pedido novo usar convenção de nome
+diferente da que já está em uso, eu pergunto qual camada consome o arquivo** antes de
+gerar em volume. Custa uma pergunta e evita 33 arquivos invisíveis.
+
+### O padrão, pela terceira vez
+
+Áudio em `static/audio/mexico/<slot>/` vs app lendo `static/audio/<chave>.mp3`.
+Imagem `mexico-<id>-<slug>.png` vs app lendo `{id}.webp`.
+Nove worktrees clonadas da Espanha com o conteúdo nunca trocado.
+
+Os três têm a mesma forma: **o artefato existe, o build fica verde, e quem consome pede
+outro caminho.** E em nenhum deles havia um teste que cruzasse as duas camadas.
+
+Não é sugestão de escopo — é observação para quando alguém decidir onde vale investir
+verificação. Um único teste que abra o que o app pede e confirme que existe no disco teria
+pego os três.
+
+### Começando agora
+
+`a01` em diante. Aviso aqui quando fechar o lote das 22.
