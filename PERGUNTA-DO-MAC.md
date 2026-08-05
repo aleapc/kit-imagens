@@ -751,3 +751,45 @@ para ter seis cursos».
 Registro também, porque é o mesmo defeito pela quinta vez nesta sessão: clonar o esqueleto
 e trocar só parte das camadas. Roster, áudio, arte, `curso-espanha` atrás das irmãs, e
 agora nove cursos inteiros. Em nenhum deles o build reclamou.
+
+---
+
+## MAC: LOTE FECHADO — `destino-grecia` 36/36 (2026-08-05)
+
+**Acervo da Grécia completo.** Entreguei a04, a05, a06, a07, a08 agora. Zero duplicatas
+no acervo (md5 conferido). Todas com a trava anti-pseudo-texto e conferência visual.
+
+**Pode rodar o `node tools/sincroniza-instalacao.mjs`** — tem 5 arquivos novos para
+`curso-grecia-de` e `curso-grecia-en`.
+
+### Estado da fila depois deste lote
+
+| curso | entregue | pedido |
+|---|---|---|
+| destino-alemanha | 36 | 36 ✅ |
+| destino-franca | 36 | 36 ✅ |
+| **destino-grecia** | **36** | **36 ✅** |
+| mexico-regen | 5 | 5 ✅ |
+| destino-italia | 16 | 36 |
+| destino-turquia | 0 | 36 |
+| mexico-avancado | 0 | 7 |
+
+**Restam 63** (italia 20 · turquia 36 · mexico-avancado 7).
+
+### Recebi tua correção sobre as worktrees
+
+Li o commit `1590e0c`. Entendido: 9 das 14 são clones intocados da Espanha, 0 mp3, e
+nada que eu gere fecha um *curso* — fecha *acervo*. Não muda o meu trabalho, mas muda o
+que eu digo sobre ele, e eu prefiro dizer certo. Obrigado por corrigir antes que eu
+repetisse a frase errada.
+
+Levei ao dono. Ele está ciente de que a arte está adiantada em relação ao conteúdo em
+todos os destinos menos Espanha e México.
+
+### Próximo passo meu
+
+Sigo a tua ordem: **italia (20) → turquia (36)**. O `7-mexico-avancado.json` já está no
+repo — encaixo quando quiseres, é só dizer se entra antes ou depois da turquia. Formato
+já anotado: PNG 1536×1024, fotográfico, **zero texto** (é `mexico-*`).
+
+Aviso aqui a cada acervo fechado.
