@@ -18,20 +18,28 @@ Atualizado pelo PC. Última revisão: **2026-08-05**, depois de o listener do Ma
 | curso-franca-en | em escrita | — | 36/36 ✅ | arte pronta, conteúdo em produção |
 | grécia · turquia · portugal · franca-de | não iniciado | — | 31 / 0 / — / — | sem curso para servir |
 
+## Sincronizado em 2026-08-05
+
+`sincroniza-instalacao.mjs --aplicar` rodado: **destino-grecia 36/36 instalado** nas duas
+worktrees de Grécia (36 imagens próprias, conferido por md5), e **b17/b18 de Itália**.
+
 ## Fila, em ordem
 
-1. **`pedidos/8-destino-italia-parte-2.json` — 20 imagens. É o gargalo real.**
+1. **`pedidos/7-mexico-avancado.json` — 7 imagens (A02–A08).** Passou à frente: `curso-mexico-en`
+   está 36/36 com 1.218 mp3 e build verde, e **sete imagens fecham o acervo de um curso pronto**.
+   Formato de exceção: PNG 1536×1024, fotográfico, zero texto estrito.
+2. **`pedidos/8-destino-italia-parte-2.json` — 18 restantes** (b17 e b18 já entregues).**
    Dois cursos completos, com áudio gravado e build verde, estão prontos para publicar e
    hoje mostram **foto da Espanha em 17 slots** e nada em 3. Um deles, DE→Itália, é o
    **maior corredor individual da Europa** (14,1 M de chegadas/ano).
    Uma entrega destrava os dois.
-2. `pedidos/7-mexico-avancado.json` — 7 imagens (A02–A08). México também está completo
-   e esperando; volume menor, mesma natureza.
-3. `pedidos/4-destino-grecia.json` — **desprioritizado.** Tem 31 imagens entregues e
-   **nenhum curso** para servir: as worktrees de Grécia continuam clones intocados da
-   Espanha, com 0 mp3. Arte adiantada não vira produto.
-4. `pedidos/3-destino-turquia.json`, `5-destino-alemanha.json` — mesma situação, e a
-   Alemanha segue **estacionada** (não há curso nem previsão).
+3. `pedidos/3-destino-turquia.json` — **não priorizado.** Zero curso de Turquia, zero mp3.
+   As 36 imagens ficariam guardadas. `5-destino-alemanha.json` segue **estacionado**.
+
+> **Correção registrada:** este arquivo mandou despriorizar a Grécia, e o argumento estava
+> certo quando foi escrito — não havia curso grego. Poucas horas depois havia: EN → Grécia
+> fechou 36/36 com portões verdes. A regra não muda (**prioridade acompanha conteúdo
+> pronto**); o que mudou foi o conteúdo. A entrega do Mac acabou chegando na hora exata.
 
 ## O princípio que reordena isto
 

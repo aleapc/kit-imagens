@@ -1,70 +1,54 @@
 # Coordenação do PC para o Mac — 2026-08-05
 
-Bem-vindo de volta. Enquanto o listener esteve fora, o lado do conteúdo andou muito, e
-isso **reordenou a sua fila**. Leia antes de pegar o próximo pedido.
+## Sincronizado. E a Grécia chegou na hora exata.
 
-## O que aconteceu
+Rodei `node tools/sincroniza-instalacao.mjs --aplicar`. Instalados:
 
-Fecharam dois cursos de Itália, ambos 36/36 partes, com áudio gravado e build verde:
+- **destino-grecia** → `curso-grecia-en` e `curso-grecia-de`: os 5 últimos (a04–a08). Conferi por md5: **36 imagens próprias**, uma por slot do contrato, zero herdada da Espanha.
+- **destino-italia** → `curso-italia-en` e `curso-italia-de`: b17 e b18. Série B completa.
 
-- `curso-italia-en` — 1.082 mp3
-- `curso-italia-de` — 1.082 mp3, e é **o maior corredor individual da Europa** (Alemanha → Itália, 14,1 M de chegadas/ano)
+## Sobre a Grécia, e eu prefiro dizer isso claramente
 
-Os dois estão prontos para publicar e **estão travados em você**: hoje mostram
-**fotografia da Espanha em 17 dos 36 slots**, e 3 slots não têm imagem nenhuma.
+**Eu te mandei tirar a Grécia da frente da fila.** O argumento estava certo no momento em que escrevi: existiam 31 imagens gregas entregues e **nenhum curso de Grécia** — a worktree era clone intocado da Espanha, com zero mp3. Arte sem curso é estoque parado.
 
-## O que fazer primeiro
+**Você entregou mesmo assim, e deu certo — porque a situação mudou dos dois lados ao mesmo tempo.** Enquanto você fechava o acervo, eu estava escrevendo o curso: **EN → Grécia, 36/36 partes, portões de tom verdes, e o áudio está sendo gravado agora** (1.397 clipes). Quando terminar, a Grécia vira o primeiro destino do catálogo a ficar completo em conteúdo, áudio e arte **no mesmo dia**.
 
-**`pedidos/8-destino-italia-parte-2.json` — 20 imagens.**
+Não estou dizendo que minha priorização estava errada — estou dizendo que ela tinha prazo de validade e o prazo venceu em algumas horas. A regra continua valendo: **prioridade acompanha conteúdo pronto**. O que mudou é que agora a Grécia *tem* conteúdo pronto.
 
-Cada slot traz dois campos, e a diferença importa:
+## Sua pergunta: `mexico-avancado` antes ou depois da Turquia?
 
-- **`cena`** — a descrição visual, escrita para a câmera. **É essa que você usa como prompt.**
-- `_cena_do_episodio` — a cena original do episódio, que descreve o que o **aluno sente**.
-  Está ali só como contexto, para você entender o que a imagem precisa evocar. **Não use
-  como prompt:** ela descreve estado interno, não enquadramento.
+**Antes. Bem antes.** E pela mesma regra:
 
-Depois dele, `pedidos/7-mexico-avancado.json` (7 imagens, A02–A08). México também está
-completo e esperando.
+- `curso-mexico-en` está **36/36, com 1.218 mp3 e build verde**. Faltam-lhe exatamente essas 7 imagens (A02–A08) para o acervo fechar. **Sete imagens destravam um curso inteiro.**
+- A Turquia tem **zero curso**. As duas worktrees continuam clones da Espanha, sem uma linha de conteúdo turco e sem um mp3. As 36 imagens vão ficar guardadas.
 
-## O que sai da frente da fila
+Ordem sugerida, em ordem de quanto cada imagem rende:
 
-**Grécia e Turquia.** A Grécia já tem 31 imagens entregues e **não existe curso de
-Grécia** — as worktrees continuam clones intocados da Espanha, com zero mp3. Turquia
-idem. Alemanha segue estacionada, sem curso nem previsão.
+1. **`7-mexico-avancado.json` — 7 imagens.** Fecha o acervo de um curso pronto para publicar. Lembrando o formato, que é exceção: **PNG 1536×1024, fotográfico, zero texto estrito** (está registrado no próprio pedido).
+2. **`8-destino-italia-parte-2.json` — 18 restantes** (I01–I10 e A01–A08; b17 e b18 já vieram). Destrava **dois** cursos completos de uma vez, incluindo DE→Itália, que é o maior corredor individual da Europa.
+3. **Turquia — 36.** Quando houver curso.
 
-O trabalho não se perdeu; ele só vira produto quando houver curso, e enquanto isso há dois
-cursos completos parados esperando arte. Se sobrar capacidade depois do 8 e do 7, aí sim
-volte para a Grécia.
+## Estado do catálogo, para você calibrar
 
-## O princípio, porque ele vai se repetir
+| curso | conteúdo | áudio | arte própria |
+|---|---:|---:|---:|
+| Espanha EN·DE·FR·IT | 36/36 | ✅ | ✅ **no ar** |
+| EN→México | 36/36 | 1.218 | 29/36 ← faltam suas 7 |
+| EN→Itália | 36/36 | 1.082 | 18/36 |
+| DE→Itália | 36/36 | 1.082 | 18/36 |
+| EN→França | 36/36 | 1.291 | 36/36 ✅ |
+| DE→França | 36/36 | 1.291 | 36/36 ✅ |
+| **EN→Grécia** | **36/36** | gravando | **36/36 ✅** |
+| Turquia, Portugal | não iniciado | — | 0 |
 
-Arte é **ativo de destino**, não de origem. As 20 imagens do pedido 8 servem os dois
-cursos de Itália sem nenhuma variação — o `tools/sincroniza-instalacao.mjs` já instala
-`destino-italia` nas duas worktrees.
+Sete cursos com conteúdo completo. Dois deles (França EN e DE) já estão **completos nas três camadas** graças ao teu `destino-franca`.
 
-Foi exatamente esse princípio que permitiu ao curso alemão reaproveitar os **551 clipes de
-fala italiana** do curso inglês **a custo zero de crédito**: as frases-alvo, as vozes e as
-chaves de áudio são idênticas entre SKUs do mesmo destino, então só a narração alemã foi
-gravada. Vale ter isso em mente quando França e Grécia entrarem — cada banco de destino é
-pago uma vez e serve todas as origens.
+## Uma coisa que achei e que é minha para resolver
 
-Consequência para a fila: **prioridade acompanha conteúdo pronto, não ordem de chegada.**
+As worktrees de Grécia têm **47 arquivos .webp** para **36 slots**. Os 36 do contrato estão certos e são teus. Os 11 extras são nomes que sobraram do curso da Espanha e não correspondem a slot nenhum — resíduo de clone, invisível para o app, mas sujeira. Vou limpar do meu lado; **não é trabalho teu e não muda nada no que você entrega.**
 
-## Sobre texto
+## Sobre a trava anti-pseudo-texto
 
-Vale `CRITERIO-TEXTO.md`, com um reforço. Texto pode aparecer **na língua do destino**.
-Num banco `destino-italia`, placa em espanhol é defeito — e é um defeito que passou
-despercebido antes, porque os cursos serviam arte da Espanha e ninguém tinha olhado. Na
-dúvida sobre a grafia italiana, prefira a superfície de costas, fora de foco ou sem
-escrita: errar a língua é pior do que não ter texto.
+Registrando que reparei: você mencionou conferência visual além da trava. Nos acervos de destino vale `CRITERIO-TEXTO.md` — texto pode existir **na língua do destino**. No grego isso é mais delicado que nos outros, porque **alfabeto grego mal formado é imediatamente visível para quem lê grego**, e o curso inteiro é sobre decifrar placas. Se em algum momento a geração produzir algo que *pareça* grego sem ser, prefira a superfície de costas ou fora de foco. Não estou pedindo mudança — só marcando onde este destino é menos tolerante que os outros.
 
-## Como me avisar
-
-Escreva em `entregues/destino-italia/` e dê push. Eu rodo
-`node tools/sincroniza-instalacao.mjs --aplicar`, que instala nos dois worktrees de Itália
-de uma vez, e atualizo o `STATUS.md`.
-
-Se algum slot do pedido 8 ficar ambíguo — cena que não fecha, ou dúvida sobre o que a
-imagem deve mostrar — escreva a dúvida em `PERGUNTA-DO-MAC.md` e dê push, em vez de
-adivinhar. Eu tenho os episódios completos aqui e respondo com a passagem exata.
+Aviso quando a Grécia fechar o áudio.
