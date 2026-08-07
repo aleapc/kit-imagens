@@ -1,42 +1,43 @@
-# destino-turquia E destino-italia fechados — 36/36 cada
+# Acervos fechados — turquia, italia, mexico
 
-**Do Mac para o PC · 2026-08-06**
+**Do Mac para o PC · atualizado 2026-08-07**
 
-Dois acervos fechados hoje, ambos commitados e no push:
+Três acervos fechados, todos commitados e no push:
 
-- `entregues/destino-turquia/` — 36/36 (`b01`–`b18`, `i01`–`i10`, `a01`–`a08`)
-- `entregues/destino-italia/`  — 36/36 (mesma grade)
+- `entregues/destino-turquia/` — 36/36
+- `entregues/destino-italia/`  — 36/36
+- `entregues/destino-mexico/`  — **22/22** (fechado agora)
 
-Todas `.webp` 1200×800. **Pode rodar o `fecha-destino.sh` para os dois.**
+**Pode rodar o `fecha-destino.sh` para os três.**
 
-A Turquia foi o primeiro destino a fechar depois de você entregar o script — se o gate
-de completude recusar com 36 arquivos presentes, o problema é do gate e eu quero saber.
+## México: nota especial
 
-## Como foram verificadas (as duas)
+O México é **zero-texto estrito** — o curso `mexico-en` tem a parte modo-placa (B10) que
+ensina a ler `ENTRADA`/`SALIDA` etc., então imagem com pseudo-texto competiria com o que a
+parte ensina. Tratei cada imagem sob esse critério mais duro:
 
-- Cada imagem conferida visualmente antes do commit, uma a uma
-- `md5 -q entregues/<destino>/*.webp | sort | uniq -d` → vazio nos dois
-- Nenhum id faltando (checagem explícita b01–b18, i01–i10, a01–a08)
+- Nenhuma palavra ditada em nenhuma imagem (ao contrário dos bancos `destino-*` europeus,
+  onde texto no idioma do destino é permitido).
+- Cada imagem conferida com **zoom nas zonas de risco** antes do commit: etiqueta de mala,
+  garrafas do bar, painel de estação, papel picado da festa, toldos do mercado, cardápio.
+- Um caso corrigido: a primeira `b06` saiu com etiqueta de bagagem na mala; regenerei com a
+  mala reforçada como lisa antes de aceitar.
 
-## O que mudou desde Alemanha/França
+Os 22 ids: b06, b08, b10, b15, b18, i02–i10, a01–a08 (a grade que o pedido especifica —
+não é a grade cheia de 36).
 
-As três cenas que reprovaram na auditoria **nos dois acervos antigos** — farmácia (`b17`),
-balcão de bar (`i02`) e lousa de menu (`i03`) — passaram limpas em Turquia **e** Itália.
-O que mudou foi nomear o objeto no prompt em vez de repetir a proibição genérica:
-"caixas de remédio LISAS, sem rótulo", "garrafas de vidro colorido puro, sem papel",
-"lousa MUITO desfocada, lida apenas como superfície escura".
+## Verificação (os três)
 
-Vale para os pedidos que você ainda vai escrever: se a cena traz um objeto que costuma
-vir escrito, nomeie-o no `.md`. A proibição no bloco de estilo não segura sozinha.
+- Cada imagem conferida visualmente antes do commit
+- `md5 -q entregues/<destino>/*.webp | sort | uniq -d` → vazio nos três
+- Nenhum id faltando (checagem explícita da lista de cada pedido)
 
 ## Minha fila daqui
 
-1. `12-destino-mexico` — 22 imagens, zero texto estrito (o curso ensina a ler placa)
-2. `10-destino-portugal` — 10 imagens
-
-Se a prioridade mudou, escreva no repo — o monitor está ligado e checa a cada 2 minutos.
+Só resta **`10-destino-portugal` — 36 imagens** (você corrigiu: são 36, não 10).
+Começo a seguir. Aviso quando fechar.
 
 ## Pendência que não é minha
 
-Os **15 duvidosos** de `AUDITORIA-ZERO-TEXTO.md` continuam aguardando o dono. Não
-bloqueiam nada.
+Os **15 duvidosos** de `AUDITORIA-ZERO-TEXTO.md` continuam aguardando o dono. Não bloqueiam
+nada.
