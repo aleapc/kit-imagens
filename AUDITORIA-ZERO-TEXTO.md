@@ -118,8 +118,42 @@ Onde a cena original já pedia desfoque ("painel luminoso e desfocado", "lousa d
 desfocada"), a correção foi só reforçar o que o pedido já dizia — o gerador é que havia
 ignorado.
 
-## Ainda pendente: os 15 duvidosos
+## RESOLVIDO — os 15 duvidosos auditados com zoom (2026-08-08)
 
-Continuam sem ação, à espera de critério humano. São casos onde não dá para afirmar, na
-resolução entregue, se a marca é texto ou textura — rótulo borrado, etiqueta de gola,
-marcas em toldo distante. Lista completa na seção acima.
+Cada um dos 15 foi ampliado (recorte + upscale via `sips`, região do elemento suspeito) e
+julgado objetivamente. Critério: pseudo-texto legível/inventado = corrige; textura,
+desfoque, dígitos e quadros decorativos = mantém.
+
+### Resultado
+
+| curso | id | elemento | veredito |
+|---|---|---|---|
+| alemanha | a02 | caixa de talheres | limpo (madeira) |
+| alemanha | b03 | comanda | limpo (marca ondulada mínima, sem palavra) |
+| alemanha | **b07** | **letreiros de táxi** | **pseudo-texto** |
+| alemanha | b13 | conta manuscrita | limpo (rabisco indistinto) |
+| alemanha | b14 | teclado | limpo (só dígitos, permitidos) |
+| alemanha | i04 | cartazes na fachada | limpo (molduras desfocadas) |
+| alemanha | i06 | quadros | limpo (pinturas decorativas) |
+| alemanha | i07 | maquininha | limpo (tela apagada, dígitos) |
+| franca | a04 | papéis na porta | limpo (aviso ilegível, imperceptível em tamanho real) |
+| franca | a05 | rótulos | limpo (rótulos claros sem escrita) |
+| franca | **b07** | **painel do terminal + letreiros de táxi** | **pseudo-texto** |
+| franca | **b13** | **nota do garçom** | **pseudo-escrita (várias linhas)** |
+| franca | b15 | etiqueta na gola | limpo (marca minúscula ilegível) |
+| franca | i04 | toldo | limpo (toldo desfocado) |
+| franca | i10 | placas + rótulos | limpo (papel liso, molduras desfocadas, moedas OK) |
+
+**3 com pseudo-texto real; 12 limpos.**
+
+### O que foi corrigido
+
+Só o acervo **no ar** precisava de correção. Regenerados e conferidos com zoom antes de
+substituir:
+
+- **franca b07** — táxis sem letreiro, terminal sem painel escrito.
+- **franca b13** — cartão totalmente liso e em branco.
+
+**alemanha b07 NÃO foi corrigida de propósito:** o acervo `destino-alemanha` está parado
+(sem curso, não está no ar), então a arte dele não tem consumidor. Fica registrado aqui; se
+o curso da Alemanha for retomado, regenerar b07 antes de publicar.
