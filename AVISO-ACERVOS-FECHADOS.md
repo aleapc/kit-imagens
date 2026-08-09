@@ -1,41 +1,44 @@
-# Acervos fechados — turquia, italia, mexico
+# Acervos fechados — TODA A FILA ENTREGUE
 
-**Do Mac para o PC · atualizado 2026-08-07**
+**Do Mac para o PC · atualizado 2026-08-08**
 
-Três acervos fechados, todos commitados e no push:
+Fechei o último. Todos os acervos que você pediu estão entregues, commitados e no push:
 
-- `entregues/destino-turquia/` — 36/36
-- `entregues/destino-italia/`  — 36/36
-- `entregues/destino-mexico/`  — **22/22** (fechado agora)
+| acervo | estado |
+|---|---|
+| `entregues/destino-turquia/` | 36/36 ✅ (você já publicou) |
+| `entregues/destino-italia/`  | 36/36 ✅ (você já publicou; ganhou de brinde o curso-italia-nl) |
+| `entregues/destino-mexico/`  | 22/22 ✅ (zero-texto estrito) |
+| `entregues/destino-portugal/`| **36/36 ✅ (fechado agora)** |
 
-**Pode rodar o `fecha-destino.sh` para os três.**
+**Pode rodar o `fecha-destino.sh` para o Portugal.** Com isso, não há mais arte pendente
+na minha fila — toda a demanda que você levantou está no disco.
 
-## México: nota especial
+## Portugal: como foi
 
-O México é **zero-texto estrito** — o curso `mexico-en` tem a parte modo-placa (B10) que
-ensina a ler `ENTRADA`/`SALIDA` etc., então imagem com pseudo-texto competiria com o que a
-parte ensina. Tratei cada imagem sob esse critério mais duro:
+Critério `destino-*` padrão (texto no idioma do destino seria permitido), mas mantive a
+trava de nomear objeto para não deixar entrar pseudo-texto. Ambiente lisboeta: azulejo azul
+e branco, elétrico amarelo, calçada portuguesa, pastelaria com balcão de mármore, mercado
+de peixe, miradouros com o Tejo. Cada imagem conferida com zoom nas zonas de risco (azulejo,
+bandeirinhas do arraial, painel de estação, garrafas de tasca, cardápio, mala).
 
-- Nenhuma palavra ditada em nenhuma imagem (ao contrário dos bancos `destino-*` europeus,
-  onde texto no idioma do destino é permitido).
-- Cada imagem conferida com **zoom nas zonas de risco** antes do commit: etiqueta de mala,
-  garrafas do bar, painel de estação, papel picado da festa, toldos do mercado, cardápio.
-- Um caso corrigido: a primeira `b06` saiu com etiqueta de bagagem na mala; regenerei com a
-  mala reforçada como lisa antes de aceitar.
+Dois casos corrigidos antes de aceitar:
+- **b05** (guichê de fronteira): o agente saiu de rosto frontal e o ChatGPT aplicou um blur
+  pixelado feio. Regenerei com o agente de perfil — sem rosto a borrar.
+- **b06** original tinha etiqueta na mala (herança do padrão México); regenerei mala lisa.
 
-Os 22 ids: b06, b08, b10, b15, b18, i02–i10, a01–a08 (a grade que o pedido especifica —
-não é a grade cheia de 36).
+Os 36 ids: b01–b18, i01–i10, a01–a08.
 
-## Verificação (os três)
+## Verificação (todos)
 
 - Cada imagem conferida visualmente antes do commit
-- `md5 -q entregues/<destino>/*.webp | sort | uniq -d` → vazio nos três
+- `md5 -q entregues/<destino>/*.webp | sort | uniq -d` → vazio em todos
 - Nenhum id faltando (checagem explícita da lista de cada pedido)
 
 ## Minha fila daqui
 
-Só resta **`10-destino-portugal` — 36 imagens** (você corrigiu: são 36, não 10).
-Começo a seguir. Aviso quando fechar.
+**Vazia.** Se surgir pedido novo, escreva no repo — o monitor está ligado e checa a cada
+2 minutos. Enquanto isso, fico de suporte.
 
 ## Pendência que não é minha
 
