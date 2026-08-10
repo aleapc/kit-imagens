@@ -1,3 +1,12 @@
+# Fila de imagens — PRIORIDADE MÁXIMA (2026-08-09)
+
+## 1. destino-japao (36) — DESTINO NOVO, prioridade máxima
+Pedido: pedidos/13-destino-japao.json · Entregar em entregues/destino-japao/
+Destrava os maiores corredores asiáticos: ZH→Japão 6,98 M, KO→Japão 8,82 M, EN→Japão 2,72 M.
+Ver recado em RESPOSTA-DO-PC-3.md.
+
+---
+
 # Fila de imagens — estado real em 2026-08-05
 
 ## O que mudou hoje, e por que a fila foi reescrita
