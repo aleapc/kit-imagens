@@ -15,6 +15,7 @@
 | 6 | `19-guia-singapura` | `entregues/guia-singapura/` | **108** | pasta vazia | depois de Bangkok |
 | 7 | `20-guia-antalya` | `entregues/guia-antalya/` | **107** | pasta vazia | depois de Singapura |
 | 8 | `21-guia-pattaya` | `entregues/guia-pattaya/` | **108** | pasta vazia | depois de Antalya |
+| 9 | `22-guia-novayork` | `entregues/guia-novayork/` | **108** | pasta vazia | depois de Pattaya |
 
 Nada mais está pendente de imagem. A sessão [cursos] avisou no `guias-mapa/COORDENACAO.md`
 que **não tem pedido de imagem no momento** (KO/ZH→Japão reusam 100% o acervo
