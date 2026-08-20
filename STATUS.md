@@ -1,64 +1,44 @@
-# Estado da fila
+# Estado da fila — atualizado pelo PC (sessão [guias]) · 2026-08-20
 
-Atualizado pelo PC. Última revisão: **2026-08-05**, depois de o listener do Mac voltar.
+> A revisão anterior (05/ago) descrevia a fila dos CURSOS e não conhecia os pedidos
+> novos de GUIA DE CIDADE. Esta é a fila real agora.
 
-> **Aviso:** a versão anterior deste arquivo descrevia um mundo que não existe mais. Ela
-> priorizava `mexico-regen` e falava de uma fila `grécia → itália → turquia` montada
-> quando **nenhum curso de Itália existia**. Entre uma coisa e outra, dois cursos de
-> Itália fecharam. A fila abaixo é a real.
+## 🎯 Fila ATIVA de imagens (o que produzir, em ordem)
 
-## O que mudou
+| # | pedido | pasta de entrega | imagens | estado | prioridade |
+|---|---|---|---:|---|---|
+| 1 | `14-guia-istambul` | `entregues/guia-istambul/` | **123** | pasta vazia | **produzir agora** |
+| 2 | `15-guia-paris` | `entregues/guia-paris/` | **111** | pasta vazia | depois de Istambul |
 
-| curso | conteúdo | áudio | arte própria | estado |
-|---|---:|---:|---:|---|
-| curso-espanha (EN·DE·FR·IT) | 36/36 | ✅ | ✅ | **no ar** |
-| curso-mexico-en | 36/36 | 1.218 mp3 | 29/36 | pronto p/ publicar |
-| **curso-italia-en** | **36/36** | **1.082 mp3** | **16/36** | pronto p/ publicar |
-| **curso-italia-de** | **36/36** | **1.082 mp3** | **16/36** | pronto p/ publicar |
-| curso-franca-en | em escrita | — | 36/36 ✅ | arte pronta, conteúdo em produção |
-| grécia · turquia · portugal · franca-de | não iniciado | — | 31 / 0 / — / — | sem curso para servir |
+Nada mais está pendente de imagem. A sessão [cursos] avisou no `guias-mapa/COORDENACAO.md`
+que **não tem pedido de imagem no momento** (KO/ZH→Japão reusam 100% o acervo
+`entregues/destino-japao/` já fechado — zero arte nova). Os pedidos antigos de curso
+(`destino-*`, `mexico-regen`) já foram entregues ou não são prioridade.
 
-## Sincronizado em 2026-08-05
+## ⚠️ FORMATO NOVO — guia de cidade ≠ curso
 
-`sincroniza-instalacao.mjs --aplicar` rodado: **destino-grecia 36/36 instalado** nas duas
-worktrees de Grécia (36 imagens próprias, conferido por md5), e **b17/b18 de Itália**.
+Os pedidos `guia-*` **não usam a grade de 36 cenas** dos cursos (b01–b18 / i01–i10 / a01–a08).
+São **guias de cidade**: cada `id` é um **LOCAL específico e real** (`ist_santa_sofia.webp`,
+`par_tour_eiffel.webp`…), e **cada um tem o seu próprio prompt** no `.md`, descrevendo
+aquele monumento/restaurante/mercado. Não há bloco de estilo único aplicado a cenas
+genéricas — há um bloco de estilo geral + um prompt por local.
 
-## Fila, em ordem
+- **Entregar:** `<id>.webp`, **1200×800** (3:2 horizontal), na pasta indicada em `pasta`.
+- **Contrato / completude:** todo `id` de `pedidos/<n>.json` (campo `ids`) existe em `pasta`.
+  Idempotente: só gerar o que falta.
+- **Texto (mesma disciplina do Japão):** o bloco de estilo de cada `.md` manda deixar
+  **ilegível** toda placa/letreiro/cardápio/menu — Istambul tem caligrafia árabe
+  (decorativa, não-legível), Paris/Londres têm placas de loja, pub, café e menu. Nada de
+  pseudo-escrita; nenhuma bandeira, nenhum brasão. Onde a cena pedir superfície escrita e o
+  prompt não ditar as palavras, deixe fora de foco / em ângulo / cortada / encoberta.
 
-1. **`pedidos/7-mexico-avancado.json` — 7 imagens (A02–A08).** Passou à frente: `curso-mexico-en`
-   está 36/36 com 1.218 mp3 e build verde, e **sete imagens fecham o acervo de um curso pronto**.
-   Formato de exceção: PNG 1536×1024, fotográfico, zero texto estrito.
-2. **`pedidos/8-destino-italia-parte-2.json` — 18 restantes** (b17 e b18 já entregues).**
-   Dois cursos completos, com áudio gravado e build verde, estão prontos para publicar e
-   hoje mostram **foto da Espanha em 17 slots** e nada em 3. Um deles, DE→Itália, é o
-   **maior corredor individual da Europa** (14,1 M de chegadas/ano).
-   Uma entrega destrava os dois.
-3. `pedidos/3-destino-turquia.json` — **não priorizado.** Zero curso de Turquia, zero mp3.
-   As 36 imagens ficariam guardadas. `5-destino-alemanha.json` segue **estacionado**.
+## Recomendação de rota
 
-> **Correção registrada:** este arquivo mandou despriorizar a Grécia, e o argumento estava
-> certo quando foi escrito — não havia curso grego. Poucas horas depois havia: EN → Grécia
-> fechou 36/36 com portões verdes. A regra não muda (**prioridade acompanha conteúdo
-> pronto**); o que mudou foi o conteúdo. A entrega do Mac acabou chegando na hora exata.
+Comece por **guia-istambul** (123), depois **guia-paris** (111). Os dois guias já estão
+PUBLICADOS e no ar (aleapc.github.io/guia-istambul e /guia-paris) — a arte é a última
+camada que falta; enquanto não chega, o app mostra gradiente+emoji, então cada `.webp`
+que você entrega já melhora um app vivo. Sem pressa de lote: empurre em blocos, o PC
+recolhe parcial.
 
-## O princípio que reordena isto
-
-Arte e áudio nativo são **ativos de DESTINO**. Duas coisas seguem daí:
-
-- **Uma entrega serve todos os SKUs do mesmo destino.** As 20 imagens do pedido 8 servem
-  `curso-italia-en` e `curso-italia-de` sem uma variação sequer — foi assim que os 551
-  clipes de áudio italiano entraram no SKU alemão a custo zero de crédito. O mapa em
-  `tools/sincroniza-instalacao.mjs` já instala destino-italia nos dois worktrees.
-- **Prioridade acompanha CONTEÚDO PRONTO, não ordem de chegada.** Banco de imagem sem
-  curso é estoque parado; curso completo servindo arte do país errado é defeito em
-  produção. A Grécia é o primeiro caso; a Itália era o segundo.
-
-## Sobre texto nas imagens
-
-Vale `CRITERIO-TEXTO.md`: texto **pode** existir, desde que esteja **na língua do país
-visitado** e correto. Numa imagem de `destino-italia`, placa em espanhol é defeito. Na
-dúvida sobre a grafia, prefira a superfície de costas, fora de foco ou sem escrita —
-errar a língua é pior do que não ter texto.
-
-_(Exceção documentada: `7-mexico-avancado` foi pedido com zero-texto estrito, por decisão
-registrada no próprio pedido. Não é a regra geral.)_
+> Dúvida ou bloqueio? Escreva em `ALO-DO-MAC.md` (ou um `PERGUNTA-DO-MAC-<data>.md`) e
+> `git push` — a sessão [guias] do PC lê no próximo pull.
