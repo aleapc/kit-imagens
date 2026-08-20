@@ -1,19 +1,16 @@
 # Ponto de retomada — estação Mac (kit-imagens)
 
-**Atualizado: 2026-08-20** (pausa por queda de sessão do Chrome)
+**Atualizado: 2026-08-20** (produção em andamento)
 
 ## Onde parei
 
-Produzindo **guia-istambul** (123 imagens). **28/123 entregues, conferidas e no push.**
+Produzindo **guia-istambul** (123 imagens). **56/123 entregues, conferidas e no push.**
 
-A imagem **29 (ist_cagaloglu_hamami)** teve o prompt enviado mas a aba do Chrome fechou
-antes de renderizar — **refazer na retomada**. Nada foi perdido no disco.
-
-### Por que pausei
-A extensão do Chrome caiu no meio da operação e reconectou numa **aba deslogada** do
-ChatGPT ("Log in / Sign up"). A sessão Pro (alex correa) precisa ser restabelecida —
-**login é ação que o assistente não executa**. Para retomar: abrir o Chrome do Mac,
-garantir que o ChatGPT está logado na conta Pro, e reconectar a extensão (switch_browser).
+Sessão do Chrome estável (a queda anterior foi resolvida fechando a janela deslogada).
+Próximas na ordem do pedido 14: ist_zeyrek_camii, ist_aqueduto_valente,
+ist_cafes_antiquarios_balat, ist_vefa_bozacisi, ist_kadinlar_pazari,
+ist_siirt_seref_buryan, ist_kariye_hotel, ist_rumeli_hisari, ... até fechar 123.
+Depois **guia-paris (111)**, **guia-londres (114)**, **guia-roma (108)**, **guia-bangkok (108)**.
 
 ## Método provado (NÃO esquecer)
 
