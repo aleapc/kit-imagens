@@ -4,13 +4,35 @@
 
 ## Onde parei
 
-Produzindo **guia-istambul** (123 imagens). **56/123 entregues, conferidas e no push.**
+Produzindo **guia-istambul** (123 imagens). **80/123 entregues, conferidas e no push.**
 
 Sessão do Chrome estável (a queda anterior foi resolvida fechando a janela deslogada).
-Próximas na ordem do pedido 14: ist_zeyrek_camii, ist_aqueduto_valente,
-ist_cafes_antiquarios_balat, ist_vefa_bozacisi, ist_kadinlar_pazari,
-ist_siirt_seref_buryan, ist_kariye_hotel, ist_rumeli_hisari, ... até fechar 123.
+Próximas na ordem do pedido 14 (43 restantes): ist_peixe_orla_ortakoy, ist_cafe_orla_ortakoy,
+ist_nisantasi_compras, ist_abdi_ipekci, ist_besiktas_carsi, ist_ciragan_palace_kempinski,
+ist_witt_istanbul, ist_kadikoy_carsi_mercado, ist_kadikoy_balik_pazari, ist_baylan_kadikoy,
+ist_ciya_tatlici, ist_yanyali_fehmi, ist_ali_usta_moda, ist_moda_cay_bahcesi,
+ist_montag_coffee_moda, ist_kadife_sokak_barlar, ist_sureyya_operasi, ist_boga_heykeli,
+ist_yeldegirmeni_murais, ist_fenerbahce_parque_farol, ist_moda_orla_por_do_sol,
+ist_kadikoy_antikacilar, ist_ikiz_konak_moda, ist_mihrimah_sultan_camii_uskudar,
+ist_semsi_pasa_camii, ist_yeni_valide_camii, ist_camlica_camii, ist_colina_camlica,
+ist_kuzguncuk_icadiye, ist_cengelkoy_cinaralti, ist_salacak_orla, ist_fethi_pasa_korusu,
+ist_kanaat_lokantasi, ist_uskudar_iskele, ist_lokma_uskudar, ist_aya_yorgi,
+ist_casas_vitorianas_buyukada, ist_casa_trotsky, ist_yorukali_plaji, ist_heybeliada,
+ist_restaurantes_peixe_buyukada, ist_splendid_palace, ist_dondurma_buyukada.
 Depois **guia-paris (111)**, **guia-londres (114)**, **guia-roma (108)**, **guia-bangkok (108)**.
+
+## Fluxo de salvar (novo)
+
+Usar SEMPRE `bash /Users/aleapc/kit-imagens/save.sh <id>` — comando único e analisável
+(oferece "Allow Always"). Ele lê o clipboard KITIMG, salva webp 1200x800, faz PNG de
+conferência na scratchpad, verifica duplicata, commit e push. Conferir imagem lendo
+`/private/tmp/claude-501/-Users-aleapc-Desktop/304d82fe-3316-4e79-89bb-2bf2f2d526bd/scratchpad/chk.png`.
+
+## Rate-limit
+
+O ChatGPT passou a limitar ("Too many requests") após ~5-75 imagens seguidas. Ao bater,
+esperar alguns minutos (a geração pendente costuma completar sozinha após o cooldown) e seguir
+mais devagar. Login/sessão: fechar qualquer janela Chrome deslogada.
 
 ## Método provado (NÃO esquecer)
 
