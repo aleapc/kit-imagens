@@ -13,6 +13,7 @@
 | 4 | `17-guia-roma` | `entregues/guia-roma/` | **108** | pasta vazia | depois de Londres |
 | 5 | `18-guia-bangkok` | `entregues/guia-bangkok/` | **108** | pasta vazia | depois de Roma |
 | 6 | `19-guia-singapura` | `entregues/guia-singapura/` | **108** | pasta vazia | depois de Bangkok |
+| 7 | `20-guia-antalya` | `entregues/guia-antalya/` | **107** | pasta vazia | depois de Singapura |
 
 Nada mais está pendente de imagem. A sessão [cursos] avisou no `guias-mapa/COORDENACAO.md`
 que **não tem pedido de imagem no momento** (KO/ZH→Japão reusam 100% o acervo
