@@ -10,6 +10,7 @@
 | 1 | `14-guia-istambul` | `entregues/guia-istambul/` | **123** | pasta vazia | **produzir agora** |
 | 2 | `15-guia-paris` | `entregues/guia-paris/` | **111** | pasta vazia | depois de Istambul |
 | 3 | `16-guia-londres` | `entregues/guia-londres/` | **114** | pasta vazia | depois de Paris |
+| 4 | `17-guia-roma` | `entregues/guia-roma/` | **108** | pasta vazia | depois de Londres |
 
 Nada mais está pendente de imagem. A sessão [cursos] avisou no `guias-mapa/COORDENACAO.md`
 que **não tem pedido de imagem no momento** (KO/ZH→Japão reusam 100% o acervo
