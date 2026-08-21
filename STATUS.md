@@ -23,6 +23,7 @@
 | 14 | `27-guia-orlando` | `entregues/guia-orlando/` | **108** | pasta vazia | depois de Los Angeles |
 | 15 | `28-guia-bodrum` | `entregues/guia-bodrum/` | **107** | pasta vazia | depois de Orlando |
 | 16 | `29-guia-sydney` | `entregues/guia-sydney/` | **108** | pasta vazia | depois de Bodrum |
+| 17 | `30-guia-melbourne` | `entregues/guia-melbourne/` | **107** | pasta vazia | depois de Sydney |
 
 Nada mais está pendente de imagem. A sessão [cursos] avisou no `guias-mapa/COORDENACAO.md`
 que **não tem pedido de imagem no momento** (KO/ZH→Japão reusam 100% o acervo
