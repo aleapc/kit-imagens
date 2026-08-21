@@ -1,25 +1,18 @@
 # Ponto de retomada — estação Mac (kit-imagens)
 
-**Atualizado: 2026-08-20** (produção em andamento)
+**Atualizado: 2026-08-21** (guia-istambul CONCLUÍDO)
 
 ## Onde parei
 
-Produzindo **guia-istambul** (123 imagens). **80/123 entregues, conferidas e no push.**
+**guia-istambul: 123/123 COMPLETO** — todas conferidas, 1200×800, no push (HEAD==upstream).
 
-Sessão do Chrome estável (a queda anterior foi resolvida fechando a janela deslogada).
-Próximas na ordem do pedido 14 (43 restantes): ist_peixe_orla_ortakoy, ist_cafe_orla_ortakoy,
-ist_nisantasi_compras, ist_abdi_ipekci, ist_besiktas_carsi, ist_ciragan_palace_kempinski,
-ist_witt_istanbul, ist_kadikoy_carsi_mercado, ist_kadikoy_balik_pazari, ist_baylan_kadikoy,
-ist_ciya_tatlici, ist_yanyali_fehmi, ist_ali_usta_moda, ist_moda_cay_bahcesi,
-ist_montag_coffee_moda, ist_kadife_sokak_barlar, ist_sureyya_operasi, ist_boga_heykeli,
-ist_yeldegirmeni_murais, ist_fenerbahce_parque_farol, ist_moda_orla_por_do_sol,
-ist_kadikoy_antikacilar, ist_ikiz_konak_moda, ist_mihrimah_sultan_camii_uskudar,
-ist_semsi_pasa_camii, ist_yeni_valide_camii, ist_camlica_camii, ist_colina_camlica,
-ist_kuzguncuk_icadiye, ist_cengelkoy_cinaralti, ist_salacak_orla, ist_fethi_pasa_korusu,
-ist_kanaat_lokantasi, ist_uskudar_iskele, ist_lokma_uskudar, ist_aya_yorgi,
-ist_casas_vitorianas_buyukada, ist_casa_trotsky, ist_yorukali_plaji, ist_heybeliada,
-ist_restaurantes_peixe_buyukada, ist_splendid_palace, ist_dondurma_buyukada.
-Depois **guia-paris (111)**, **guia-londres (114)**, **guia-roma (108)**, **guia-bangkok (108)**.
+Próximo guia na ordem do PC: **guia-paris (111)** pelo `pedidos/15-guia-paris.md`.
+Depois **guia-londres (114)**, **guia-roma (108)**, **guia-bangkok (108)**, **guia-miami (108)**.
+
+Fluxo idêntico ao de Istambul: gerar só via "+ → Create image", extrair via canvas,
+salvar com `bash save.sh <id> guia-paris` (2º arg define a pasta de destino).
+Allowlist já tem o coringa `Bash(bash /Users/aleapc/kit-imagens/save.sh:*)`, então
+não pede mais "Allow" a cada id novo.
 
 ## Fluxo de salvar (novo)
 
