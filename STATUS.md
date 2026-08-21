@@ -20,6 +20,7 @@
 | 11 | `24-guia-edirne` | `entregues/guia-edirne/` | **71** | pasta vazia | depois de Las Vegas |
 | 12 | `25-guia-miami` | `entregues/guia-miami/` | **108** | pasta vazia | depois de Edirne |
 | 13 | `26-guia-losangeles` | `entregues/guia-losangeles/` | **109** | pasta vazia | depois de Miami |
+| 14 | `27-guia-orlando` | `entregues/guia-orlando/` | **108** | pasta vazia | depois de Los Angeles |
 
 Nada mais está pendente de imagem. A sessão [cursos] avisou no `guias-mapa/COORDENACAO.md`
 que **não tem pedido de imagem no momento** (KO/ZH→Japão reusam 100% o acervo
