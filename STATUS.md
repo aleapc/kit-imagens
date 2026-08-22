@@ -25,6 +25,7 @@
 | 16 | `29-guia-sydney` | `entregues/guia-sydney/` | **108** | pasta vazia | depois de Bodrum |
 | 17 | `30-guia-melbourne` | `entregues/guia-melbourne/` | **107** | pasta vazia | depois de Sydney |
 | 18 | `31-guia-saofrancisco` | `entregues/guia-saofrancisco/` | **107** | pasta vazia | depois de Melbourne |
+| 19 | `32-guia-edimburgo` | `entregues/guia-edimburgo/` | **105** | pasta vazia | depois de San Francisco |
 | 17 | `30-guia-melbourne` | `entregues/guia-melbourne/` | **107** | pasta vazia | depois de Sydney |
 
 Nada mais está pendente de imagem. A sessão [cursos] avisou no `guias-mapa/COORDENACAO.md`
