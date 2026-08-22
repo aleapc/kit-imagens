@@ -32,6 +32,7 @@
 | 23 | `36-guia-manchester` | `entregues/guia-manchester/` | **100** | pasta vazia | depois de Chicago |
 | 24 | `37-guia-brisbane` | `entregues/guia-brisbane/` | **103** | pasta vazia | depois de Manchester |
 | 25 | `38-guia-havai` | `entregues/guia-havai/` | **104** | pasta vazia | depois de Brisbane |
+| 26 | `39-guia-washington` | `entregues/guia-washington/` | **103** | pasta vazia | depois de Havaí |
 | 17 | `30-guia-melbourne` | `entregues/guia-melbourne/` | **107** | pasta vazia | depois de Sydney |
 
 Nada mais está pendente de imagem. A sessão [cursos] avisou no `guias-mapa/COORDENACAO.md`
