@@ -26,6 +26,7 @@
 | 17 | `30-guia-melbourne` | `entregues/guia-melbourne/` | **107** | pasta vazia | depois de Sydney |
 | 18 | `31-guia-saofrancisco` | `entregues/guia-saofrancisco/` | **107** | pasta vazia | depois de Melbourne |
 | 19 | `32-guia-edimburgo` | `entregues/guia-edimburgo/` | **105** | pasta vazia | depois de San Francisco |
+| 20 | `33-guia-okinawa` | `entregues/guia-okinawa/` | **106** | pasta vazia | depois de Edimburgo |
 | 17 | `30-guia-melbourne` | `entregues/guia-melbourne/` | **107** | pasta vazia | depois de Sydney |
 
 Nada mais está pendente de imagem. A sessão [cursos] avisou no `guias-mapa/COORDENACAO.md`
