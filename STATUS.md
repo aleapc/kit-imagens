@@ -34,6 +34,7 @@
 | 25 | `38-guia-havai` | `entregues/guia-havai/` | **104** | pasta vazia | depois de Brisbane |
 | 26 | `39-guia-washington` | `entregues/guia-washington/` | **103** | pasta vazia | depois de Havaí |
 | 27 | `40-guia-galway` | `entregues/guia-galway/` | **105** | pasta vazia | depois de Washington |
+| 28 | `41-guia-boston` | `entregues/guia-boston/` | **105** | pasta vazia | depois de Galway |
 
 Nada mais está pendente de imagem. A sessão [cursos] avisou no `guias-mapa/COORDENACAO.md`
 que **não tem pedido de imagem no momento** (KO/ZH→Japão reusam 100% o acervo
